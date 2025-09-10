@@ -54,8 +54,8 @@ export default {
         },
         convrt: {
           "dark-blue": "#222233",
-          "purple": "#EC4899",
-          "purple-hover": "#DB2777",
+          "purple": "#6e31b9ff",
+          "purple-hover": "#983aadff",
           "purple-light": "#F472B6",
           "white": "#FFFFFF",
           "light-gray": "#F5F7FA",
