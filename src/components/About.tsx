@@ -32,12 +32,12 @@ const About = () => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
           >
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 text-convrt-purple mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 bg-convrt-text-gradient bg-clip-text text-transparent mb-6">
               <span className="text-sm font-medium font-inter tracking-wide">👋 Meet Your Data Partner</span>
             </div>
             
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              I'm <span className="text-convrt-purple font-extrabold">Kabir</span> — Your Data Partner
+              I'm <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Kabir</span> — Your Data Partner
             </h2>
             
             <div className="space-y-6 text-lg text-convrt-dark-blue/80 leading-relaxed">
@@ -55,7 +55,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/kabir-patel1203/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-[#0077B5] text-white rounded-lg hover:bg-[#005885] transition-all hover:scale-105 font-medium"
+                className="button-primary inline-flex items-center px-6 py-3  text-white rounded-lg hover:bg-[#005885] transition-all hover:scale-105 font-medium"
               >
                 Connect on LinkedIn
                 <ExternalLink className="ml-2 w-4 h-4" />

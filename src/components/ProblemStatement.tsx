@@ -43,7 +43,7 @@ const ProblemStatement = () => {
             className="heading-lg text-convrt-dark-blue mb-6"
           >
             Scattered Spreadsheets vs. <br />
-            <span className="text-convrt-purple font-extrabold">Smart Dashboards</span>
+            <span className=" bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Smart Dashboards</span>
           </motion.h2>
           
           <motion.p 

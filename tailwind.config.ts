@@ -63,9 +63,10 @@ export default {
           "influential": "#EC4899"
         }
       },
-      backgroundImage: {
-    'convrt-gradient': 'linear-gradient(90deg, #F472B6 0%, #6e31b9ff 100%)',
-      },
+    backgroundImage: {
+      'convrt-gradient': 'linear-gradient(90deg, #EA384C 0%, #9a27b1ff 100%)', // reddish to purple
+      'convrt-text-gradient': 'linear-gradient(90deg, #EA384C 0%, #9a27b1ff 100%)', // for text
+    },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

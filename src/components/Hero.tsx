@@ -54,7 +54,7 @@ const Hero = () => {
             variants={itemVariants}
             className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
           >
-            <span className="text-convrt-purple font-extrabold">Data That Works for You.</span>
+            <span className=" bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Data That Works for You.</span>
           </motion.h1>
           
           <motion.p 

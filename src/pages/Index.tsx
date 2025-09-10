@@ -57,14 +57,14 @@ const Index = () => {
               viewport={{ once: true }}
               className="text-center text-white"
             >
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/20 text-convrt-purple mb-8">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/20 bg-convrt-text-gradient mb-8">
                 <Calendar className="w-4 h-4 mr-2" />
                 <span className="text-sm font-medium font-inter tracking-wide">Free 30-Minute Consultation</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Ready to Transform Your 
-                <span className="text-convrt-purple font-extrabold"> Data Strategy</span>?
+                Ready to Transform Your     
+                <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold"> Data Strategy</span>?
               </h2>
               
               <p className="text-xl text-gray-100 mb-12 max-w-2xl mx-auto">
@@ -115,11 +115,21 @@ const Index = () => {
               viewport={{ once: true }}
               className="mb-6 md:mb-0 flex items-center space-x-3"
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center text-white font-bold">
+              {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center text-white font-bold"> */}
                 
-              </div>
+              {/* </div> */}
+
+                      <div className="flex items-center">
+          <a href="/" className="flex items-center space-x-3">
+            <img
+              src="LOGO.png" // Use the public path
+              alt="Kabir Logo"
+              className="w-25 h-12 rounded-xl"
+            />
+          </a>
+        </div>
               <div>
-                <h3 className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</h3>
+                {/* <h3 className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</h3> */}
                 <p className="text-sm text-gray-600 mt-1">© {new Date().getFullYear()} All rights reserved.</p>
               </div>
             </motion.div>
