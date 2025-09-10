@@ -27,31 +27,30 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/ce207080-f6c2-430d-9621-79d32ab08655.png" 
-              alt="Convrt.ai Logo" 
-              className="h-8 md:h-10"
-            />
+          <a href="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center text-white font-bold text-lg">
+              K
+            </div>
+            <span className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</span>
           </a>
         </div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            How It Works
+          <a href="#about" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+            About
+          </a>
+          <a href="#services" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+            Services
+          </a>
+          <a href="#case-study" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+            Case Study
           </a>
           <a href="#testimonials" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Case Studies
+            Testimonials
           </a>
-          <a href="#product" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Product
-          </a>
-          <a href="#pricing" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Pricing
-          </a>
-          <a href="#cta" className="button-primary">
-            Get Started
+          <a href="#consultation" className="button-primary">
+            Book Consultation
           </a>
         </div>
         
@@ -69,39 +68,39 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6">
           <div className="flex flex-col space-y-4">
             <a 
-              href="#how-it-works" 
+              href="#about" 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How It Works
+              About
+            </a>
+            <a 
+              href="#services" 
+              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a 
+              href="#case-study" 
+              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Case Study
             </a>
             <a 
               href="#testimonials" 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Case Studies
+              Testimonials
             </a>
             <a 
-              href="#product" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Product
-            </a>
-            <a 
-              href="#pricing" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Pricing
-            </a>
-            <a 
-              href="#cta" 
+              href="#consultation" 
               className="button-primary w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get Started
+              Book Consultation
             </a>
           </div>
         </div>

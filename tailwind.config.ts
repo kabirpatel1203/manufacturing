@@ -54,13 +54,13 @@ export default {
         },
         convrt: {
           "dark-blue": "#222233",
-          "purple": "#8B5CF6",
-          "purple-hover": "#7C3AED",
-          "purple-light": "#9B87F5",
+          "purple": "#EC4899",
+          "purple-hover": "#DB2777",
+          "purple-light": "#F472B6",
           "white": "#FFFFFF",
           "light-gray": "#F5F7FA",
           "ignored": "#EA384C",
-          "influential": "#8B5CF6"
+          "influential": "#EC4899"
         }
       },
       borderRadius: {

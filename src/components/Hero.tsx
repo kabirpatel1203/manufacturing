@@ -47,14 +47,14 @@ const Hero = () => {
             className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 text-convrt-purple mb-6"
           >
             <Zap className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium font-inter tracking-wide">📊 KabirData</span>
+            <span className="text-sm font-medium font-inter tracking-wide">📊 Data Solutions</span>
           </motion.div>
           
           <motion.h1 
             variants={itemVariants}
             className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
           >
-            <span className="text-[#6936F5] font-extrabold">Data That Works for You.</span>
+            <span className="text-convrt-purple font-extrabold">Data That Works for You.</span>
           </motion.h1>
           
           <motion.p 
@@ -68,8 +68,8 @@ const Hero = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16"
           >
-            <a href="#cta" className="button-primary flex items-center group font-inter font-medium">
-              Get Started
+            <a href="#consultation" className="button-primary flex items-center group font-inter font-medium">
+              Book Free Consultation
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="#services" className="button-outline font-inter">
