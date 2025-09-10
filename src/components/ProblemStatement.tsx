@@ -35,22 +35,22 @@ const ProblemStatement = () => {
           className="max-w-3xl mx-auto text-center mb-12"
         >
           <motion.div variants={itemVariants} className="section-tag">
-            Why Traditional Outbound Is Dead
+            Why Most Manufacturers Struggle With Data
           </motion.div>
           
           <motion.h2 
             variants={itemVariants}
             className="heading-lg text-convrt-dark-blue mb-6"
           >
-            Cold Outreach Doesn't Work Anymore. <br />
-            <span className="text-convrt-purple font-extrabold">AI Organic Outbound</span> Does.
+            Scattered Spreadsheets vs. <br />
+            <span className="text-convrt-purple font-extrabold">Smart Dashboards</span>
           </motion.h2>
           
           <motion.p 
             variants={itemVariants}
             className="text-convrt-dark-blue/80 text-lg mb-8 max-w-2xl mx-auto"
           >
-            The days of cold calls and emails are over. Today's buyers expect personalized engagement from people they trust. Convrt.ai puts you exactly where your buyers make decisions.
+            Most small manufacturers are drowning in data but starving for insights. The difference between struggling and thriving is having the right information at the right time.
           </motion.p>
         </motion.div>
         
@@ -61,7 +61,7 @@ const ProblemStatement = () => {
           variants={containerVariants}
           className="grid md:grid-cols-2 gap-10"
         >
-          {/* Traditional Cold Outbound - simplified box */}
+          {/* Scattered Data Management */}
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -5 }}
@@ -72,7 +72,7 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
-              Traditional Cold Outbound
+              Scattered Data Management
             </h3>
             
             <ul className="space-y-6">
@@ -81,8 +81,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">1% cold email response rates</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Millions of emails sent, almost all ignored</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">No informed decisions</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Guessing instead of knowing what's working</p>
                 </div>
               </li>
               
@@ -91,8 +91,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">80% of calls screened out</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Decision makers don't take cold calls</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Hours wasted on manual reports</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Time spent compiling instead of analyzing</p>
                 </div>
               </li>
               
@@ -101,8 +101,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">No relationship before outreach</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Cold outreach feels impersonal and salesy</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Reactive instead of proactive</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Finding problems after they've already cost money</p>
                 </div>
               </li>
             </ul>
@@ -110,24 +110,24 @@ const ProblemStatement = () => {
             <div className="mt-12 grid grid-cols-3 gap-4">
               <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
                 <PhoneCall className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Cold Calls</div>
+                <div className="text-sm text-center text-[#EA384C] font-medium">Excel Hell</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
                 <Mail className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Mass Emails</div>
+                <div className="text-sm text-center text-[#EA384C] font-medium">Manual Reports</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
                 <MessageSquare className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Generic Messages</div>
+                <div className="text-sm text-center text-[#EA384C] font-medium">Guesswork</div>
               </div>
             </div>
             
             <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[#EA384C]"></div>
           </motion.div>
           
-          {/* AI Organic Outbound - simplified box */}
+          {/* Smart Data Solutions */}
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -5 }}
@@ -138,8 +138,8 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
-              AI Organic Outbound
-              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-convrt-purple/10 text-convrt-purple rounded-full">Convrt.ai</span>
+              Smart Data Solutions
+              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-convrt-purple/10 text-convrt-purple rounded-full">KabirData</span>
             </h3>
             
             <ul className="space-y-6">
@@ -148,8 +148,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">15x higher conversion rates</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Build trust before you reach out</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Better informed decisions</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Real-time insights that drive action</p>
                 </div>
               </li>
               
@@ -158,8 +158,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Key touchpoints and discussions</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Tracks the entire buyer's journey</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Increase revenue & efficiency</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Automated processes save time and money</p>
                 </div>
               </li>
               
@@ -168,8 +168,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Fully automated growth hacking</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Enterprise-grade AI engagement</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Proactive problem solving</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Catch issues before they become expensive</p>
                 </div>
               </li>
             </ul>
@@ -177,17 +177,17 @@ const ProblemStatement = () => {
             <div className="mt-12 grid grid-cols-3 gap-4">
               <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
                 <Users className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Engagement</div>
+                <div className="text-sm text-center text-convrt-purple font-medium">Smart Dashboards</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
                 <Zap className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Trust Building</div>
+                <div className="text-sm text-center text-convrt-purple font-medium">Automation</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
                 <BarChart3 className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Win More Deals</div>
+                <div className="text-sm text-center text-convrt-purple font-medium">Growth</div>
               </div>
             </div>
             

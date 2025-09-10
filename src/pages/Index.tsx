@@ -2,8 +2,9 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import Services from '@/components/Services';
 import ProblemStatement from '@/components/ProblemStatement';
-import HowItWorks from '@/components/HowItWorks';
+import CaseStudy from '@/components/CaseStudy';
 import Testimonials from '@/components/Testimonials';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, Sparkles } from 'lucide-react';
@@ -40,8 +41,9 @@ const Index = () => {
       
       <main className="pt-16">
         <Hero />
+        <Services />
         <ProblemStatement />
-        <HowItWorks />
+        <CaseStudy />
         <Testimonials />
         
         <section className="py-16 px-6" id="cta">
@@ -97,16 +99,14 @@ const Index = () => {
                   </div>
                   
                   <motion.a
-                    href="https://www.convrt.ai/book-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#contact"
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
                     viewport={{ once: true }}
                     className="button-primary flex items-center text-lg px-8 py-4 shadow-lg shadow-convrt-purple/10 hover:shadow-xl hover:shadow-convrt-purple/20 rounded-full group"
                   >
-                    Start Free – No Credit Card Needed
+                    Book a Free Consultation
                     <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </motion.a>
                 </motion.div>
