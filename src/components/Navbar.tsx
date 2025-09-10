@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center space-x-3">
             <img
-              src="public/LOGO.png" // Use the public path
+              src="LOGO.png" // Use the public path
               alt="Kabir Logo"
               className="w-30 h-20 rounded-xl"
             />
