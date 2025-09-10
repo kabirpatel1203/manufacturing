@@ -116,7 +116,7 @@ const Index = () => {
               className="mb-6 md:mb-0 flex items-center space-x-3"
             >
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center text-white font-bold">
-                K
+                
               </div>
               <div>
                 <h3 className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</h3>

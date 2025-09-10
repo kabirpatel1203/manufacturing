@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, BarChart2, Award } from 'lucide-react';
+import { BarChart2, Zap, Bot } from 'lucide-react';
 import StatCard from './StatCard';
 
 interface StatsSectionProps {
@@ -30,35 +29,41 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
   };
 
   return (
-    <motion.div 
-      ref={statsRef} 
+    <motion.div
+      ref={statsRef}
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       className="grid grid-cols-1 md:grid-cols-3 gap-8"
     >
-      <motion.div variants={itemVariants}>
-        <StatCard 
-          value="15x" 
-          description="Higher Conversion Rates" 
-          icon={<TrendingUp className="w-8 h-8" />} 
+      {/* Stat 1 - Dashboards */}
+      <motion.div variants={itemVariants} className="flex justify-center">
+        <StatCard
+          value="70%"
+          description="Faster Reporting with Real-Time Dashboards"
+          icon={<BarChart2 className="w-8 h-8" />}
+          className="h-full flex justify-center"
         />
       </motion.div>
-      
-      <motion.div variants={itemVariants}>
-        <StatCard 
-          value="80%" 
-          description="Less Prospecting Time" 
-          icon={<BarChart2 className="w-8 h-8" />} 
+
+      {/* Stat 2 - Automation */}
+      <motion.div variants={itemVariants} className="flex justify-center">
+        <StatCard
+          value="60%"
+          description="Reduce Manual Work Using Workflow Automation"
+          icon={<Zap className="w-8 h-8" />}
+          className="h-full"
         />
       </motion.div>
-      
-      <motion.div variants={itemVariants}>
-        <StatCard 
-          value="78%" 
-          description="Sales Outperformance" 
-          icon={<Award className="w-8 h-8" />} 
+
+      {/* Stat 3 - Database Bots */}
+      <motion.div variants={itemVariants} className="flex justify-center">
+        <StatCard
+          value="100%"
+          description="Instant Insights via Interactive Database Bots"
+          icon={<Bot className="w-8 h-8" />}
+          className="h-full"
         />
       </motion.div>
     </motion.div>

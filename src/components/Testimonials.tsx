@@ -6,8 +6,8 @@ const testimonials = [
   {
     id: 1,
     quote: "Your data insights helped us improve production planning and reduce material waste. It’s been a game-changer for our business.",
-    name: "Matthew Lenhart",
-    title: "Senior Manager, Sales Ops & Strategy at Servtech Plastics",
+    name: "Shadab Aziz",
+    title: "CEO & President at Servtech Plastics",
     company: "Servtech Plastics",
     logo: "otter",
     bgColor: "bg-[#efeaf5]",
@@ -86,7 +86,7 @@ const Testimonials = () => {
               </div>
               <div className="mt-auto pt-6">
                 <div className="font-bold text-lg">
-                  <span className="font-black">OI</span>•<span className="font-black">I</span> Otter.ai
+                  <span className="font-black">I</span> Prime Poly Products
                 </div>
               </div>
             </div>
@@ -100,8 +100,8 @@ const Testimonials = () => {
             viewport={{ once: true }}
             className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100"
           >
-            <div className="h-full flex items-center justify-center p-6">
-              <div className="font-black text-2xl italic">Handshake</div>
+            <div className="h-full flex items-center justify-center p-5">
+              <div className="font-black text-2xl italic">Servtech Plastics</div>
             </div>
           </motion.div>
 
@@ -137,7 +137,7 @@ const Testimonials = () => {
                 "{testimonials[1].quote}"
               </div>
               <div className="mt-auto">
-                <div className="font-bold text-lg">connecteam</div>
+                <div className="font-bold text-lg">Mazda Manufacturing</div>
               </div>
             </div>
           </motion.div>
@@ -150,9 +150,9 @@ const Testimonials = () => {
             viewport={{ once: true }}
             className="col-span-12 md:col-span-5 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100"
           >
-            <div className="h-full flex items-center justify-center p-6">
+            <div className="h-full flex items-center justify-center p-2">
               <div className="font-black text-xl">
-                <span className="inline-block bg-black text-white px-1 py-0.5 rounded">∫</span> sumup°
+                <span className="inline-block bg-black text-white px-1 py-0.5 rounded">∫</span>Shree Rubber Works°
               </div>
             </div>
           </motion.div>
@@ -171,7 +171,7 @@ const Testimonials = () => {
               </div>
               <div className="mt-auto">
                 <div className="font-bold flex items-center">
-                  <span className="inline-block mr-1">⊙</span> spectinga
+                  <span className="inline-block mr-1">⊙</span> Shree Rubber Works
                 </div>
               </div>
             </div>

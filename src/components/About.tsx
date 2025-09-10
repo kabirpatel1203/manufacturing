@@ -6,12 +6,12 @@ const About = () => {
   const achievements = [
     {
       icon: <Award className="w-8 h-8 text-convrt-purple" />,
-      stat: "5+",
+      stat: "4+",
       label: "Years Experience"
     },
     {
       icon: <Users className="w-8 h-8 text-convrt-purple" />,
-      stat: "50+",
+      stat: "6+",
       label: "Companies Helped"
     },
     {
@@ -115,7 +115,7 @@ const About = () => {
                 </div>
                 <div className="p-4 bg-gray-50 rounded-xl">
                   <div className="font-semibold text-convrt-dark-blue">Small Businesses</div>
-                  <div className="text-sm text-convrt-dark-blue/70">50+ Companies</div>
+                  <div className="text-sm text-convrt-dark-blue/70">6+ Companies</div>
                 </div>
               </div>
             </div>

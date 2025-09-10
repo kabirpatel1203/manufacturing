@@ -54,7 +54,7 @@ export default {
         },
         convrt: {
           "dark-blue": "#222233",
-          "purple": "#6e31b9ff",
+          "purple": "#9a27b1ff",
           "purple-hover": "#983aadff",
           "purple-light": "#F472B6",
           "white": "#FFFFFF",
@@ -62,6 +62,9 @@ export default {
           "ignored": "#EA384C",
           "influential": "#EC4899"
         }
+      },
+      backgroundImage: {
+    'convrt-gradient': 'linear-gradient(90deg, #F472B6 0%, #6e31b9ff 100%)',
       },
       borderRadius: {
         lg: "var(--radius)",

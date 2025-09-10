@@ -128,24 +128,24 @@ const ProblemStatement = () => {
           </motion.div>
           
           {/* Smart Data Solutions */}
-          <motion.div 
+<motion.div 
             variants={itemVariants}
             whileHover={{ y: -5 }}
-            className="bg-[#F9F6F3] rounded-[20px] p-8 border border-gray-100 relative overflow-hidden group"
+            className="bg-green-50 rounded-[20px] p-8 border border-gray-100 relative overflow-hidden group"
           >
-            <div className="absolute top-0 right-0 bg-convrt-purple/10 px-4 py-2 rounded-bl-2xl">
-              <Check className="w-5 h-5 text-convrt-purple" />
+            <div className="absolute top-0 right-0 bg-green-100 px-4 py-2 rounded-bl-2xl">
+              <Check className="w-5 h-5 text-green-600" />
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
               Smart Data Solutions
-              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-convrt-purple/10 text-convrt-purple rounded-full">KabirData</span>
+              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-600 rounded-full">KabirData</span>
             </h3>
             
             <ul className="space-y-6">
               <li className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-convrt-purple/10 flex items-center justify-center mt-0.5 mr-4">
-                  <Check className="w-4 h-4 text-convrt-purple" />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-0.5 mr-4">
+                  <Check className="w-4 h-4 text-green-600" />
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">Better informed decisions</p>
@@ -154,8 +154,8 @@ const ProblemStatement = () => {
               </li>
               
               <li className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-convrt-purple/10 flex items-center justify-center mt-0.5 mr-4">
-                  <Check className="w-4 h-4 text-convrt-purple" />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-0.5 mr-4">
+                  <Check className="w-4 h-4 text-green-600" />
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">Increase revenue & efficiency</p>
@@ -164,8 +164,8 @@ const ProblemStatement = () => {
               </li>
               
               <li className="flex items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-convrt-purple/10 flex items-center justify-center mt-0.5 mr-4">
-                  <Check className="w-4 h-4 text-convrt-purple" />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mt-0.5 mr-4">
+                  <Check className="w-4 h-4 text-green-600" />
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">Proactive problem solving</p>
@@ -175,23 +175,23 @@ const ProblemStatement = () => {
             </ul>
             
             <div className="mt-12 grid grid-cols-3 gap-4">
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <Users className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Smart Dashboards</div>
+              <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">
+                <Users className="w-8 h-8 text-green-600 mb-2" />
+                <div className="text-sm text-center text-green-600 font-medium">Smart Dashboards</div>
               </div>
               
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <Zap className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Automation</div>
+              <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">
+                <Zap className="w-8 h-8 text-green-600 mb-2" />
+                <div className="text-sm text-center text-green-600 font-medium">Automation</div>
               </div>
               
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <BarChart3 className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Growth</div>
+              <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">
+                <BarChart3 className="w-8 h-8 text-green-600 mb-2" />
+                <div className="text-sm text-center text-green-600 font-medium">Growth</div>
               </div>
             </div>
             
-            <div className="absolute -bottom-1 left-0 right-0 h-1 bg-convrt-purple"></div>
+            <div className="absolute -bottom-1 left-0 right-0 h-1 bg-green-600"></div>
           </motion.div>
         </motion.div>
       </div>

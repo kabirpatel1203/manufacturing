@@ -28,10 +28,11 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center text-white font-bold text-lg">
-              K
-            </div>
-            <span className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</span>
+            <img
+              src="public/LOGO.png" // Use the public path
+              alt="Kabir Logo"
+              className="w-30 h-20 rounded-xl"
+            />
           </a>
         </div>
         
