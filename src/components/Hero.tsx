@@ -59,7 +59,7 @@ const Hero = () => {
           
           <motion.p 
             variants={itemVariants}
-            className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
+            className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed font-bold"
           >
             I help small plastics & rubber manufacturers make smarter decisions with dashboards, automation, and AI — without hiring a full-time data team.
           </motion.p>
