@@ -43,7 +43,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           value="70%"
           description="Faster Reporting with Real-Time Dashboards"
           icon={<BarChart2 className="w-8 h-8" />}
-          className="h-full flex justify-center"
+          footer="Transform scattered data into actionable insights"
         />
       </motion.div>
 
@@ -53,7 +53,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           value="60%"
           description="Reduce Manual Work Using Workflow Automation"
           icon={<Zap className="w-8 h-8" />}
-          className="h-full"
+          footer="Eliminate repetitive tasks and human error"
         />
       </motion.div>
 
@@ -63,7 +63,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           value="100%"
           description="Instant Insights via Interactive Database Bots"
           icon={<Bot className="w-8 h-8" />}
-          className="h-full"
+          footer="Get answers to your data questions instantly"
         />
       </motion.div>
     </motion.div>

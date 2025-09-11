@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { BarChart3, Zap, MessageSquare, ArrowRight } from 'lucide-react';
+import ServiceModal from './services/ServiceModal';
 
 const Services = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<'dashboards' | 'automation' | 'chatbot'>('dashboards');
+
+  const handleLearnMore = (serviceType: 'dashboards' | 'automation' | 'chatbot') => {
+    setSelectedService(serviceType);
+    setModalOpen(true);
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -129,7 +138,13 @@ const Services = () => {
                     {service.description}
                   </p>
                   
-                  <button className={`${colors.button} text-white px-6 py-3 rounded-lg font-medium flex items-center group transition-all duration-300 hover:shadow-lg`}>
+                  <button 
+                    onClick={() => handleLearnMore(
+                      service.title.includes('Dashboards') ? 'dashboards' : 
+                      service.title.includes('Automate') ? 'automation' : 'chatbot'
+                    )}
+                    className={`${colors.button} text-white px-6 py-3 rounded-lg font-medium flex items-center group transition-all duration-300 hover:shadow-lg`}
+                  >
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </button>
@@ -146,6 +161,13 @@ const Services = () => {
           })}
         </motion.div>
       </div>
+
+      {/* Service Modal */}
+      <ServiceModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        serviceType={selectedService}
+      />
     </section>
   );
 };
