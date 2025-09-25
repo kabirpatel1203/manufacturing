@@ -61,7 +61,8 @@ const Hero = () => {
   variants={itemVariants}
   className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
 >
-  I help small <span className="font-bold">plastics & rubber manufacturers</span> make smarter decisions with <span className="font-bold">data dashboards, automation, and AI </span> — without hiring a full-time data team.
+  I help small <span className="font-bold">plastics & rubber manufacturers</span> make smarter decisions with <span className="font-bold">their data—save time, reduce costs, and grow profits without hiring extra staff. </span>
+  
 </motion.p>
 
           
