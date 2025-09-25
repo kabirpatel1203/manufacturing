@@ -51,7 +51,7 @@ const Navbar = () => {
             Testimonials
           </a>
           <a href="#consultation" className="button-primary">
-            Book Consultation
+            Book Free Dashboard Demo
           </a>
         </div>
         
@@ -101,7 +101,7 @@ const Navbar = () => {
               className="button-primary w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Book Consultation
+              Book Free Dashboard Demo
             </a>
           </div>
         </div>

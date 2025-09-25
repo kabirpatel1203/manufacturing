@@ -71,7 +71,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16"
           >
             <a href="#consultation" className="button-primary flex items-center group font-inter font-medium">
-              Book Free Consultation
+              Book Free Dashboard Demo
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="#services" className="button-outline font-inter">

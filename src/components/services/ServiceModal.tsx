@@ -283,7 +283,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, serviceTyp
               rel="noopener noreferrer"
               className="button-primary inline-flex items-center"
             >
-              Book Free 30-Min Consultation
+              Book Free Dashboard Demo
             </a>
           </div>
         </div>
