@@ -2,6 +2,8 @@
 import React from 'react';
 import { X, Check, PhoneCall, Mail, MessageSquare, Users, Zap, BarChart3 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import scatteredSpreadsheetsImg from '../assets/scattered-spreadsheets.jpg';
+import cleanDashboardImg from '../assets/clean-dashboard.jpg';
 
 const ProblemStatement = () => {
   const containerVariants = {
@@ -71,9 +73,17 @@ const ProblemStatement = () => {
               <X className="w-5 h-5 text-[#EA384C]" />
             </div>
             
-            <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
+            <h3 className="heading-sm text-convrt-dark-blue mb-6 flex items-center">
               Scattered Data Management
             </h3>
+            
+            <div className="mb-8 rounded-xl overflow-hidden">
+              <img 
+                src={scatteredSpreadsheetsImg} 
+                alt="Cluttered workspace with scattered spreadsheets and folders" 
+                className="w-full h-48 object-cover"
+              />
+            </div>
             
             <ul className="space-y-6">
               <li className="flex items-start">
@@ -137,10 +147,17 @@ const ProblemStatement = () => {
               <Check className="w-5 h-5 text-green-600" />
             </div>
             
-            <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
+            <h3 className="heading-sm text-convrt-dark-blue mb-6 flex items-center">
               Smart Data Solutions
-              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-600 rounded-full">KabirData</span>
             </h3>
+            
+            <div className="mb-8 rounded-xl overflow-hidden">
+              <img 
+                src={cleanDashboardImg} 
+                alt="Clean modern business dashboard with organized data visualization" 
+                className="w-full h-48 object-cover"
+              />
+            </div>
             
             <ul className="space-y-6">
               <li className="flex items-start">
