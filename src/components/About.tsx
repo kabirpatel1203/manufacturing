@@ -42,7 +42,7 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-convrt-dark-blue/80 leading-relaxed">
               <p>
-                I believe data should be simple, actionable, and affordable. I've helped companies like Servtech Plastics transform their reporting, cut manual work, and make better business decisions — without hiring expensive in-house analysts.
+                I’m a data analytics expert with hands-on experience helping small plastic and rubber manufacturers optimize operations and increase profits. I turn your existing data into clear, actionable insights—so you can make decisions with confidence.
               </p>
               
               <p>
