@@ -38,10 +38,10 @@ const CaseStudy = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              How Servtech Plastics Reduced Reporting Time by 70%
+              How Sorand Plastics Reduced Reporting Time by 70%
             </h2>
             <p className="text-convrt-dark-blue/80 text-lg max-w-3xl mx-auto">
-              Servtech Plastics struggled with manual reporting and scattered data across multiple systems.
+              Sorand Plastics struggled with manual reporting and scattered data across multiple systems.
             </p>
           </motion.div>
 

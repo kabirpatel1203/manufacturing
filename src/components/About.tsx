@@ -46,7 +46,7 @@ const About = () => {
               </p>
               
               <p>
-                I have worked in Data and AI field with companies like <strong>Dell, Inhealth, Cal State Long Beach, Servtech Plastics</strong> and many more which equipped me to improve business outcomes through data.
+                I have worked in Data and AI field with companies like <strong>Dell, Inhealth, Cal State Long Beach, Sorand Plastics</strong> and many more which equipped me to improve business outcomes through data.
               </p>
             </div>
 

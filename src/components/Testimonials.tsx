@@ -6,9 +6,9 @@ const testimonials = [
   {
     id: 1,
     quote: "Your data insights helped us improve production planning and reduce material waste. It’s been a game-changer for our business.",
-    name: "Shadab Aziz",
-    title: "CEO & President at Servtech Plastics",
-    company: "Servtech Plastics",
+    name: "Keval Bundela",
+    title: "CEO & President at Sorand Plastics",
+    company: "Sorand Plastics",
     logo: "otter",
     bgColor: "bg-[#efeaf5]",
   },
@@ -37,7 +37,7 @@ const stats = [
     id: 1,
     value: "40%",
     description: "reduction in production inefficiencies",
-    company: "Servtech Plastics",
+    company: "Sorand Plastics",
     bgColor: "bg-[#efeaf5]",
   },
   {
@@ -101,7 +101,7 @@ const Testimonials = () => {
             className="col-span-12 md:col-span-4 lg:col-span-3 rounded-xl overflow-hidden border border-gray-100"
           >
             <div className="h-full flex items-center justify-center p-5">
-              <div className="font-black text-2xl italic">Servtech Plastics</div>
+              <div className="font-black text-2xl italic">Sorand Plastics</div>
             </div>
           </motion.div>
 
