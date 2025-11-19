@@ -73,7 +73,7 @@ const Index = () => {
               
               <div className="grid md:grid-cols-3 gap-8 mb-12">
                 {[
-                  { icon: <Clock className="w-6 h-6" />, title: "30 Minutes", desc: "Free consultation & demo" },
+                  { icon: <Clock className="w-6 h-6" />, title: "15 Minutes", desc: "Free consultation & demo" },
                   { icon: <Check className="w-6 h-6" />, title: "Custom Plan", desc: "Tailored to your needs" },
                   { icon: <ArrowRight className="w-6 h-6" />, title: "Get Started", desc: "Same week implementation" }
                 ].map((item, i) => (
