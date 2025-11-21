@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle, TrendingUp, Clock, BarChart3 } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const CaseStudy = () => {
   const containerVariants = {
@@ -41,108 +41,44 @@ const CaseStudy = () => {
               Real Results: PlasticoRub Case Study
             </h2>
             <p className="text-convrt-dark-blue/80 text-lg max-w-3xl mx-auto">
-            See how we helped an injection molding company:
-              - Eliminate 3 stockouts per month (saving $8K-$12K in rush fees)
-              - Reduce excess inventory by 22%
-              - Catch slipping accounts before they churn
-              - Cut reorder decisions from 3 hours to 10 minutes per week
+              See how we helped an injection molding company:
             </p>
           </motion.div>
 
           <motion.div 
             variants={itemVariants}
-            className="bg-white rounded-[24px] border border-gray-200 shadow-xl overflow-hidden"
+            className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-[32px] border border-gray-200 shadow-xl overflow-hidden p-10"
           >
-            <div className="grid md:grid-cols-2">
-              {/* Left side - Challenge */}
-              <div className="p-8 bg-red-50">
-                <div className="mb-6">
-                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
-                    <Clock className="w-6 h-6 text-red-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">The Challenge</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Manual data collection from 5 different systems, taking 15+ hours per week just to create basic reports.
-                  </p>
+            <div className="max-w-3xl mx-auto">
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <CheckCircle className="w-6 h-6 text-convrt-purple mt-1 mr-4 flex-shrink-0" />
+                  <span className="text-gray-800 text-lg">Eliminate 3 stockouts per month (saving $8K-$12K in rush fees)</span>
                 </div>
-                
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">Scattered data across multiple systems</span>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">Manual report compilation every week</span>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">No real-time visibility into operations</span>
-                  </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-6 h-6 text-convrt-purple mt-1 mr-4 flex-shrink-0" />
+                  <span className="text-gray-800 text-lg">Reduce excess inventory by 22%</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-6 h-6 text-convrt-purple mt-1 mr-4 flex-shrink-0" />
+                  <span className="text-gray-800 text-lg">Catch slipping accounts before they churn</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-6 h-6 text-convrt-purple mt-1 mr-4 flex-shrink-0" />
+                  <span className="text-gray-800 text-lg">Cut reorder decisions from 3 hours to 10 minutes per week</span>
                 </div>
               </div>
 
-              {/* Right side - Solution */}
-              <div className="p-8 bg-green-50">
-                <div className="mb-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-                    <BarChart3 className="w-6 h-6 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">The Solution</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    I built a custom dashboard and automated their daily reports — helping them save 15+ hours per week.
-                  </p>
-                </div>
-                
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Unified dashboard with real-time data</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Automated daily and weekly reports</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Production metrics in real-time</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Results section */}
-            <div className="p-8 bg-gradient-to-r from-blue-50 to-purple-50 border-t border-gray-200">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="flex items-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-convrt-purple mr-3" />
-                    <h4 className="text-xl font-semibold text-gray-900">Results</h4>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div>
-                      <div className="text-3xl font-bold text-convrt-purple mb-1">70%</div>
-                      <div className="text-gray-700">Reduction in reporting time</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold text-convrt-purple mb-1">15+</div>
-                      <div className="text-gray-700">Hours saved per week</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold text-convrt-purple mb-1">100%</div>
-                      <div className="text-gray-700">Real-time visibility</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <motion.button
+              <div className="flex justify-center">
+                <motion.a
+                  href="#case-study"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-convrt-purple text-white px-6 py-3 rounded-lg font-medium flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-convrt-purple text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  See More Success Stories
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </motion.button>
+                  Read Full Case Study
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </motion.a>
               </div>
             </div>
           </motion.div>
