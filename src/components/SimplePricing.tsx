@@ -48,7 +48,7 @@ const SimplePricing = () => {
           >
             <div className="mb-8">
               <div className="text-5xl font-bold mb-2">Starting at $99</div>
-              <div className="text-xl text-white/90">per month</div>
+              <div className="text-xl text-white/90"></div>
             </div>
 
             <div className="space-y-4 mb-10">

@@ -170,26 +170,30 @@ const CaseStudy = () => {
               </div>
 
               {/* CTA */}
-              <div className="flex justify-center relative z-20">
+              <div className="flex justify-center relative z-[9999] isolate">
                 <motion.a
                   href={DOC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-convrt-purple text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center shadow-lg hover:shadow-xl transition-all duration-300 pointer-events-auto"
+                  className="bg-convrt-purple text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
+                  // Stop parents from hijacking the click
+                  onPointerDownCapture={(e) => {
+                    e.stopPropagation();
+                  }}
+                  onClickCapture={(e) => {
+                    // Prevent any ancestor onClick from preventing navigation
+                    e.stopPropagation();
+                  }}
                   onClick={(e) => {
-                    // If some parent prevented default, still open a new tab.
-                    // (We don't prevent default here—anchor will work normally if not blocked.)
+                    // If something prevents default navigation, force-open the tab
+                    // This still counts as a user gesture, so popup blockers allow it.
                     try {
-                      // Give the browser a tick; if something blocked default nav,
-                      // this explicit open still fires due to user gesture.
-                      setTimeout(() => {
-                        // Some browsers may still not navigate if default was prevented.
-                        // We ensure it opens:
-                        window.open(DOC_URL, '_blank', 'noopener,noreferrer');
-                      }, 0);
+                      window.open(DOC_URL, '_blank', 'noopener,noreferrer');
                     } catch {}
+                    // We purposely do NOT preventDefault unless you want to rely solely on window.open
+                    // e.preventDefault();
                   }}
                 >
                   Read Full Case Study
@@ -206,3 +210,4 @@ const CaseStudy = () => {
 };
 
 export default CaseStudy;
+
