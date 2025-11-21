@@ -125,12 +125,13 @@ const SimplePricing = () => {
               Custom solutions tailored to your business needs
             </p>
           </motion.div>
-
+{/* //  bg-gradient-to-r from-[#E0374D] via-[#EB4160] to-[#DD375F] */}
           {/* Coral → pink gradient like your screenshot */}
           <motion.div
             variants={itemVariants}
             className="rounded-[32px] shadow-xl overflow-hidden p-10
-                       bg-gradient-to-r from-[#E0374D] via-[#EB4160] to-[#DD375F]
+                      
+                       bg-gradient-to-r from-rose-700 via-pink-700 to-fuchsia-800
                        border border-white/10 text-white"
           >
             <div className="mb-8">
