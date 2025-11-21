@@ -71,11 +71,13 @@ const CaseStudy = () => {
 
               <div className="flex justify-center">
                 <motion.a
-                  href="#case-study"
+                  href="https://drive.google.com/file/d/1I_szpzZp9bjIwJT6SKT-fXu1vl8w__m5/view?usp=sharing"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-convrt-purple text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
                 >
+
+                  
                   Read Full Case Study
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
