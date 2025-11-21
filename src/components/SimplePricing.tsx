@@ -89,8 +89,6 @@
 
 // export default SimplePricing;
 
-
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
@@ -128,32 +126,32 @@ const SimplePricing = () => {
             </p>
           </motion.div>
 
-          {/* Dark orangey pricing card */}
+          {/* Coral → pink gradient like your screenshot */}
           <motion.div
             variants={itemVariants}
-            className="rounded-[32px] border border-orange-900/40 shadow-xl overflow-hidden p-10
-                       bg-gradient-to-br from-orange-800 via-amber-800 to-orange-900"
+            className="rounded-[32px] shadow-xl overflow-hidden p-10
+                       bg-gradient-to-r from-[#E0374D] via-[#EB4160] to-[#DD375F]
+                       border border-white/10 text-white"
           >
-            <div className="mb-8 text-white">
+            <div className="mb-8">
               <div className="text-5xl font-bold mb-2">Starting at $99</div>
-              {/* <div className="text-xl text-white/90"></div> */}
             </div>
 
             <div className="space-y-4 mb-10">
               <div className="flex items-center justify-center text-white/90">
-                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-amber-200" />
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
                 <span className="text-lg">Custom dashboard design</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
-                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-amber-200" />
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
                 <span className="text-lg">Automated reporting</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
-                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-amber-200" />
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
                 <span className="text-lg">Real-time data integration</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
-                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-amber-200" />
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
                 <span className="text-lg">Ongoing support &amp; updates</span>
               </div>
             </div>
@@ -162,9 +160,9 @@ const SimplePricing = () => {
               href="#consultation"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center bg-white text-orange-900 px-10 py-4 rounded-full
+              className="inline-flex items-center bg-white text-rose-800 px-10 py-4 rounded-full
                          font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300
-                         hover:bg-orange-50"
+                         hover:bg-rose-50"
             >
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5" />
