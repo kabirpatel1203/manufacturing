@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import ProblemStatement from '@/components/ProblemStatement';
 import CaseStudy from '@/components/CaseStudy';
+import SimplePricing from '@/components/SimplePricing';
 import Testimonials from '@/components/Testimonials';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, Calendar, Clock } from 'lucide-react';
@@ -45,6 +46,7 @@ const Index = () => {
         <About />
         <Services />
         <ProblemStatement />
+        <SimplePricing />
         <CaseStudy />
         <Testimonials />
         
