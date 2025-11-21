@@ -44,7 +44,8 @@ const SimplePricing = () => {
 
           <motion.div 
             variants={itemVariants}
-            className="bg-gradient-to-br from-convrt-purple to-convrt-purple-hover rounded-[32px] p-12 text-white shadow-2xl max-w-3xl mx-auto"
+            className="bg-gradient-to-br from-violet-100 to-purple-200 rounded-[32px] border border-purple-200/70 shadow-xl overflow-hidden p-10"
+
           >
             <div className="mb-8">
               <div className="text-5xl font-bold mb-2">Starting at $99</div>
