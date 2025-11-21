@@ -21,19 +21,19 @@ const PowerBIDashboard = () => {
         <div className="bg-white rounded-lg p-4 border border-gray-200">
           <div className="flex items-center justify-between mb-2">
             <DollarSign className="w-5 h-5 text-green-600" />
-            <span className="text-xs text-green-600 font-medium">+12.5%</span>
+            <span className="text-xs text-green-600 font-medium">8 SKUs</span>
           </div>
           <div className="text-2xl font-bold text-gray-900">$485K</div>
-          <div className="text-sm text-gray-600">Monthly Revenue</div>
+          <div className="text-sm text-gray-600">Reorder Alerts:</div>
         </div>
 
         <div className="bg-white rounded-lg p-4 border border-gray-200">
           <div className="flex items-center justify-between mb-2">
             <Package className="w-5 h-5 text-blue-600" />
-            <span className="text-xs text-blue-600 font-medium">+8.3%</span>
+            <span className="text-xs text-blue-600 font-medium">12</span>
           </div>
           <div className="text-2xl font-bold text-gray-900">12,458</div>
-          <div className="text-sm text-gray-600">Units Produced</div>
+          <div className="text-sm text-gray-600">Days until Stockout:</div>
         </div>
 
         <div className="bg-white rounded-lg p-4 border border-gray-200">
@@ -41,17 +41,17 @@ const PowerBIDashboard = () => {
             <TrendingUp className="w-5 h-5 text-purple-600" />
             <span className="text-xs text-purple-600 font-medium">+15.2%</span>
           </div>
-          <div className="text-2xl font-bold text-gray-900">94.2%</div>
-          <div className="text-sm text-gray-600">Production Efficiency</div>
+          <div className="text-2xl font-bold text-gray-900">+5.2%</div>
+          <div className="text-sm text-gray-600">Gross Margin %</div>
         </div>
 
         <div className="bg-white rounded-lg p-4 border border-gray-200">
           <div className="flex items-center justify-between mb-2">
             <Users className="w-5 h-5 text-orange-600" />
-            <span className="text-xs text-orange-600 font-medium">+5.1%</span>
+            <span className="text-xs text-orange-600 font-medium">3</span>
           </div>
           <div className="text-2xl font-bold text-gray-900">127</div>
-          <div className="text-sm text-gray-600">Active Orders</div>
+          <div className="text-sm text-gray-600">Slipping Accounts</div>
         </div>
       </div>
 

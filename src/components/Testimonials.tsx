@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     id: 1,
-    quote: "Your data insights helped us improve production planning and reduce material waste. It’s been a game-changer for our business.",
+    quote: "Your reorder system eliminated our stockouts and freed up $23K in slow-moving inventory. We finally know which customers actually drive profit instead of just guessing.",
     name: "Keval Bundela",
     title: "CEO & President at Sorand Plastics",
     company: "Sorand Plastics",
@@ -36,7 +36,7 @@ const stats = [
   {
     id: 1,
     value: "40%",
-    description: "reduction in production inefficiencies",
+    description: "reduction in excess inventory",
     company: "Sorand Plastics",
     bgColor: "bg-[#efeaf5]",
   },

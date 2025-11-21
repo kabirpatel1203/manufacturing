@@ -40,20 +40,20 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       {/* Stat 1 - Dashboards */}
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
-          value="70%"
-          description="Faster Reporting with Real-Time Dashboards"
+          value=""
+          description="Stop Stockouts & Protect Margins"
           icon={<BarChart2 className="w-8 h-8" />}
-          footer="Transform scattered data into actionable insights"
+          footer="Get daily reorder alerts and see which customers and products truly drive profit"
         />
       </motion.div>
 
       {/* Stat 2 - Automation */}
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
-          value="60%"
-          description="Reduce Manual Work Using Workflow Automation"
+          value=""
+          description="Eliminate Guesswork in Inventory Decisions"
           icon={<Zap className="w-8 h-8" />}
-          footer="Eliminate repetitive tasks and human error"
+          footer="Automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
         />
       </motion.div>
 

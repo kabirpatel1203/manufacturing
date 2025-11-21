@@ -92,7 +92,7 @@ const ProblemStatement = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">No informed decisions</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Guessing instead of knowing what's working</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Can't see which customers or products truly drive profit vs. just revenue</p>
                 </div>
               </li>
               
@@ -101,8 +101,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Hours wasted on manual reports</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Time spent compiling instead of analyzing</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Reordering by gut feel</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Stockouts cost sales while excess inventory ties up cash</p>
                 </div>
               </li>
               
@@ -175,8 +175,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-green-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Increase revenue & efficiency</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Automated processes save time and money</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Protect profit and cash flow</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Know exactly when to reorder and which customers/products to prioritize</p>
                 </div>
               </li>
               

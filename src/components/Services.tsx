@@ -35,14 +35,14 @@ const Services = () => {
   const services = [
     {
       icon: BarChart3,
-      title: "Dashboards That Tell Your Story",
-      description: "Get real-time insights into production, sales, and KPIs — all in one place. No more scattered spreadsheets.",
+      title: "Inventory Intelligence That Prevents Stockouts",
+      description: "Get daily reorder alerts by SKU with recommended buy quantities based on your sales velocity and lead times. Stop losing sales to stockouts and free up cash from slow movers.",
       color: "blue"
     },
     {
       icon: Zap,
-      title: "Automate the Boring Stuff",
-      description: "Reduce manual reporting and streamline operations with custom-built automation that saves hours every week.",
+      title: "Profit Protection Dashboard",
+      description: "See which customers and products actually drive margin vs. just revenue. Get early warnings on slipping accounts, discount drag, and concentration risk—so you can focus on moves that move the numbers.",
       color: "purple"
     },
     {
