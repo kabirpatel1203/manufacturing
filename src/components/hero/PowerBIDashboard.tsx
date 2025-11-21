@@ -24,7 +24,7 @@ const PowerBIDashboard = () => {
             <span className="text-xs text-green-600 font-medium"></span>
           </div>
           <div className="text-2xl font-bold text-gray-900">8 SKUs</div>
-          <div className="text-sm text-gray-600">Reorder Alerts:</div>
+          <div className="text-sm text-gray-600">Reorder Alerts</div>
         </div>
 
         <div className="bg-white rounded-lg p-4 border border-gray-200">
@@ -33,7 +33,7 @@ const PowerBIDashboard = () => {
             <span className="text-xs text-blue-600 font-medium"></span>
           </div>
           <div className="text-2xl font-bold text-gray-900">12</div>
-          <div className="text-sm text-gray-600">Days until Stockout:</div>
+          <div className="text-sm text-gray-600">Days until Stockout</div>
         </div>
 
         <div className="bg-white rounded-lg p-4 border border-gray-200">

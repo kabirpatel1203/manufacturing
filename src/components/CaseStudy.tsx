@@ -38,10 +38,14 @@ const CaseStudy = () => {
             className="text-center mb-12"
           >
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              How Sorand Plastics Reduced Reporting Time by 70%
+              Real Results: PlasticoRub Case Study
             </h2>
             <p className="text-convrt-dark-blue/80 text-lg max-w-3xl mx-auto">
-              Sorand Plastics struggled with manual reporting and scattered data across multiple systems.
+            See how we helped an injection molding company:
+              - Eliminate 3 stockouts per month (saving $8K-$12K in rush fees)
+              - Reduce excess inventory by 22%
+              - Catch slipping accounts before they churn
+              - Cut reorder decisions from 3 hours to 10 minutes per week
             </p>
           </motion.div>
 
