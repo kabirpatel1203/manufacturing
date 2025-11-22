@@ -47,7 +47,7 @@ const Hero = () => {
             className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 text-convrt-purple mb-6"
           >
             <Zap className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium font-inter tracking-wide">📊 Data Solutions</span>
+            {/* <span className="text-sm font-medium font-inter tracking-wide">📊 Data Solutions</span> */}
           </motion.div>
           
           <motion.h1 
