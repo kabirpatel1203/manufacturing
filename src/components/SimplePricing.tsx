@@ -135,7 +135,7 @@ const SimplePricing = () => {
                        border border-white/10 text-white"
           >
             <div className="mb-8">
-              <div className="text-5xl font-bold mb-2">$99 One time Setup Fee</div>
+              <div className="text-5xl font-bold mb-2">$99 One-Time Setup Fee</div>
               <div className="text-2xl font-semibold text-white/90">+ $29/month</div>
             </div>
 
