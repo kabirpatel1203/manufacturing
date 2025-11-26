@@ -1,107 +1,150 @@
-
-import React, { useState } from 'react';
-import { Target, Users, LineChart } from 'lucide-react';
-import StepContent from './how-it-works/StepContent';
+import React from 'react';
 import { motion } from 'framer-motion';
+import { MessageSquare, Database, Gauge, TrendingUp } from 'lucide-react';
 
 const HowItWorks = () => {
-  const [activeStep, setActiveStep] = useState(1);
-
-  // Steps data
   const steps = [
     {
-      id: 1,
-      icon: <Target className="w-4 h-4" />,
-      title: "AI Identifies Where Your Buyers Engage",
-      description: "Our AI scans social media to find where your target audience is most active, identifying the exact channels, topics, and content they engage with.",
-      highlightText: "AI identifies:",
-      highlightDetails: "Relevant conversations, active communities, and engagement opportunities",
-      gifUrl: "/lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
+      number: "1",
+      icon: MessageSquare,
+      title: "We Talk About Your Business",
+      description: "You tell me how your factory runs – products, orders, costs, and what you want to see clearly (profits, delays, wastage, etc.)."
     },
     {
-      id: 2,
-      icon: <Users className="w-4 h-4" />,
-      title: "AI Auto-Warms & Builds Trust",
-      description: "Convrt creates meaningful touchpoints that position you as a trusted advisor by engaging with prospects' content and contributing value.",
-      highlightText: "AI automates:",
-      highlightDetails: "Targeted comments, relevant reactions, and personalized interactions",
-      gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Frevolutioncomedy-handshake-revolutioncomedy-icommitcombustion-kFHbqSdogIS0qtX6Pf&embed=true&screenshot=true&meta=false"
+      number: "2",
+      icon: Database,
+      title: "I Connect to Your Existing Data",
+      description: "You don't change anything. I securely pull data from tools you already use like QuickBooks, Excel, ERP, or any other software."
     },
     {
-      id: 3,
-      icon: <LineChart className="w-4 h-4" />,
-      title: "AI Converts Warm Leads Into Pipeline",
-      description: "With pre-established trust, your outreach achieves 15x higher conversion rates, turning social connections into qualified leads and deals.",
-      highlightText: "AI delivers:",
-      highlightDetails: "Warmed leads, engagement analytics, and conversion opportunities",
-      gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fchart-jtECu4TAPnhbGv2iwx&embed=true&screenshot=true&meta=false"
+      number: "3",
+      icon: Gauge,
+      title: "I Build Your Dashboard (in 7 Days)",
+      description: "I design a simple, visual dashboard just for your manufacturing business – focused on production, costs, margins, and inventory."
+    },
+    {
+      number: "4",
+      icon: TrendingUp,
+      title: "You Use It Every Day",
+      description: "The dashboard updates automatically every day with your latest data, so you can:",
+      bullets: [
+        "See what's really happening in your factory",
+        "Spot problems early",
+        "Make faster, profit-focused decisions"
+      ]
     }
   ];
 
-  const handleStepClick = (stepId: number) => {
-    setActiveStep(stepId);
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] }
+    }
   };
 
   return (
-    <section className="relative py-4 bg-white" id="how-it-works">
-      <div className="container-section py-4">
-        <div className="max-w-3xl mx-auto text-center mb-6">
-          <div className="section-tag">
-            From Ignored to Trusted
-          </div>
-          <h2 className="heading-lg text-convrt-dark-blue mb-4">
-            How <span className="gradient-text">Convrt.ai</span> Works in 3 Steps
-          </h2>
-          <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto">
-            Our AI-driven platform automates social engagement for your sales and GTM teams, transforming cold outreach into warm connections.
-          </p>
-        </div>
+    <section className="relative py-20 overflow-hidden bg-white" id="how-it-works">
+      <div className="container-section relative z-10">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
+          <motion.h2 
+            variants={itemVariants}
+            className="heading-lg text-convrt-dark-blue mb-6"
+          >
+            How It Works
+          </motion.h2>
+          
+          <motion.p 
+            variants={itemVariants}
+            className="text-convrt-dark-blue/80 text-lg"
+          >
+            Simple 4-Step Process
+          </motion.p>
+        </motion.div>
         
-        <div className="max-w-5xl mx-auto bg-gray-100 rounded-2xl overflow-hidden">
-          <div className="flex flex-col lg:flex-row h-[600px]">
-            {/* Steps Section - Now on the left */}
-            <div className="lg:w-1/3 flex flex-col gap-1 p-4 bg-gray-50">
-              {steps.map((step) => (
-                <StepContent
-                  key={step.id}
-                  stepNumber={step.id}
-                  title={step.title}
-                  description={step.description}
-                  highlightText={step.highlightText}
-                  highlightDetails={step.highlightDetails}
-                  icon={step.icon}
-                  isActive={activeStep === step.id}
-                  onClick={() => handleStepClick(step.id)}
-                />
-              ))}
-            </div>
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+          className="max-w-4xl mx-auto space-y-8"
+        >
+          {steps.map((step, index) => {
+            const Icon = step.icon;
             
-            {/* Image Display - Now covering the entire right section */}
-            <div className="lg:w-2/3 relative h-full">
-              {steps.map((step) => (
-                <motion.div 
-                  key={step.id}
-                  className="absolute inset-0 h-full w-full"
-                  initial={{ opacity: 0 }}
-                  animate={{ 
-                    opacity: activeStep === step.id ? 1 : 0,
-                    zIndex: activeStep === step.id ? 10 : 1
-                  }}
-                  transition={{ 
-                    duration: 0.5, 
-                    ease: "easeInOut"
-                  }}
-                >
-                  <img 
-                    src={step.gifUrl} 
-                    alt={`Step ${step.id}: ${step.title}`} 
-                    className="w-full h-full object-cover object-center"
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+            return (
+              <motion.div 
+                key={index}
+                variants={itemVariants}
+                className="bg-gradient-to-br from-gray-50 to-white rounded-[24px] p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="relative">
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-convrt-purple to-convrt-purple-hover flex items-center justify-center shadow-lg">
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-convrt-dark-blue text-white flex items-center justify-center font-bold text-sm">
+                        {step.number}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <h3 className="heading-sm text-convrt-dark-blue mb-3">
+                      {step.title}
+                    </h3>
+                    
+                    <p className="text-convrt-dark-blue/70 leading-relaxed mb-3">
+                      {step.description}
+                    </p>
+                    
+                    {step.bullets && (
+                      <ul className="space-y-2 mt-4">
+                        {step.bullets.map((bullet, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className="inline-block w-1.5 h-1.5 rounded-full bg-convrt-purple mt-2 mr-3 flex-shrink-0"></span>
+                            <span className="text-convrt-dark-blue/70">{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <p className="text-xl font-semibold text-convrt-dark-blue">
+            No IT team. No setup. You run your factory — I turn your data into daily insights.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
