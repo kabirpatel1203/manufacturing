@@ -8,6 +8,7 @@ import ProblemStatement from '@/components/ProblemStatement';
 import CaseStudy from '@/components/CaseStudy';
 import SimplePricing from '@/components/SimplePricing';
 import Testimonials from '@/components/Testimonials';
+import FAQ from '@/components/FAQ';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, Calendar, Clock } from 'lucide-react';
 
@@ -49,6 +50,7 @@ const Index = () => {
         <ProblemStatement />
         <CaseStudy />
         <Testimonials />
+        <FAQ />
         
         <section className="py-20 bg-convrt-dark-blue" id="consultation">
           <div className="container mx-auto max-w-4xl px-6">
