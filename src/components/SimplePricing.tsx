@@ -135,7 +135,8 @@ const SimplePricing = () => {
                        border border-white/10 text-white"
           >
             <div className="mb-8">
-              <div className="text-5xl font-bold mb-2">Starting at $99</div>
+              <div className="text-5xl font-bold mb-2">$99 Setup Fee</div>
+              <div className="text-2xl font-semibold text-white/90">+ $29/month</div>
             </div>
 
             <div className="space-y-4 mb-10">
@@ -150,6 +151,10 @@ const SimplePricing = () => {
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
                 <span className="text-lg">Real-time data integration</span>
+              </div>
+              <div className="flex items-center justify-center text-white/90">
+                <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
+                <span className="text-lg">Minor tweaks included</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
