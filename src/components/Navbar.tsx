@@ -41,8 +41,8 @@ const Navbar = () => {
           <a href="#about" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             About
           </a>
-          <a href="#services" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Services
+          <a href="#how-it-works" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+            How It Works
           </a>
           <a href="#case-study" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             Case Study
@@ -76,11 +76,11 @@ const Navbar = () => {
               About
             </a>
             <a 
-              href="#services" 
+              href="#how-it-works" 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Services
+              How It Works
             </a>
             <a 
               href="#case-study" 
