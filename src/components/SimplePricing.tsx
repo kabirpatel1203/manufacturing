@@ -119,26 +119,19 @@ const SimplePricing = () => {
         >
           <motion.div variants={itemVariants} className="mb-12">
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              Simple, Transparent Pricing
+              7-Day Free Trial - Build Dashboard on Your Data
             </h2>
             <p className="text-convrt-dark-blue/80 text-xl">
-              Custom solutions tailored to your business needs
+              Then $99 setup + $29/month. Cancel anytime during trial, no hard feelings.
             </p>
           </motion.div>
-{/* //  bg-gradient-to-r from-[#E0374D] via-[#EB4160] to-[#DD375F] */}
-          {/* Coral → pink gradient like your screenshot */}
+
           <motion.div
             variants={itemVariants}
             className="rounded-[32px] shadow-xl overflow-hidden p-10
-                      
                        bg-gradient-to-r from-rose-700 via-pink-700 to-fuchsia-800
                        border border-white/10 text-white"
           >
-            <div className="mb-8">
-              <div className="text-5xl font-bold mb-2">$99 One-Time Setup Fee</div>
-              <div className="text-2xl font-semibold text-white/90">+ $29/month</div>
-            </div>
-
             <div className="space-y-4 mb-10">
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
@@ -146,7 +139,7 @@ const SimplePricing = () => {
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Automated reporting</span>
+                <span className="text-lg">Automated daily reporting</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
@@ -154,23 +147,25 @@ const SimplePricing = () => {
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Minor tweaks included</span>
+                <span className="text-lg">Inventory reorder recommendations by SKU</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Ongoing support &amp; updates</span>
+                <span className="text-lg">Profit analysis by customer &amp; product</span>
               </div>
             </div>
 
             <motion.a
-              href="#consultation"
+              href="https://calendly.com/kabirpatel-work/15min"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center bg-white text-rose-800 px-10 py-4 rounded-full
                          font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300
                          hover:bg-rose-50"
             >
-              Get Started Today
+              Book Your Free Trial Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </motion.a>
           </motion.div>
