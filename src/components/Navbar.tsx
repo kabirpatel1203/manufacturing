@@ -53,7 +53,7 @@ const Navbar = () => {
           <a href="#testimonials" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             Testimonials
           </a>
-          <a href="#consultation" className="button-primary">
+          <a href="https://calendly.com/kabirpatel-work/15min" target="_blank" rel="noopener noreferrer" className="button-primary">
             Book Free Dashboard Demo
           </a>
         </div>
@@ -107,7 +107,9 @@ const Navbar = () => {
               Testimonials
             </a>
             <a 
-              href="#consultation" 
+              href="https://calendly.com/kabirpatel-work/15min" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="button-primary w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
