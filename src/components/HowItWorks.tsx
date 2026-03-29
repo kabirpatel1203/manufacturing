@@ -19,8 +19,8 @@ const HowItWorks = () => {
     {
       number: "3",
       icon: Gauge,
-      title: "I Build Your Dashboard (in 7 Days)",
-      description: "I design a simple, visual dashboard just for your manufacturing business – focused on production, costs, margins, and inventory."
+      title: "I Build Your AI-Powered Dashboard (in 7 Days)",
+      description: "I design a simple, AI-powered visual dashboard just for your manufacturing business – focused on production, costs, margins, and inventory."
     },
     {
       number: "4",
