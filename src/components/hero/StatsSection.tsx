@@ -61,9 +61,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Instant Insights via Interactive Database Bots"
+          description="Instant Insights via AI-Powered Interactive Database Bots"
           icon={<Bot className="w-8 h-8" />}
-          footer="Get answers to your data questions instantly"
+          footer="Get answers to your data questions instantly with AI"
         />
       </motion.div>
     </motion.div>
