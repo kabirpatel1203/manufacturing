@@ -135,7 +135,7 @@ const SimplePricing = () => {
             <div className="space-y-4 mb-10">
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Custom dashboard design</span>
+                <span className="text-lg">Custom AI-powered dashboard design</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
