@@ -41,9 +41,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Stop Stockouts & Protect Margins"
+          description="Stop Stockouts & Protect Margins by AI"
           icon={<BarChart2 className="w-8 h-8" />}
-          footer="Get daily reorder alerts and see which customers and products truly drive profit"
+          footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
         />
       </motion.div>
 
@@ -51,9 +51,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Eliminate Guesswork in Inventory Decisions"
+          description="Eliminate Guesswork in Inventory Decisions by AI"
           icon={<Zap className="w-8 h-8" />}
-          footer="Automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
+          footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
         />
       </motion.div>
 
@@ -61,9 +61,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Instant Insights via Interactive Database Bots"
+          description="Instant Insights via AI-Powered Interactive Database Bots"
           icon={<Bot className="w-8 h-8" />}
-          footer="Get answers to your data questions instantly"
+          footer="Get answers to your data questions instantly with AI"
         />
       </motion.div>
     </motion.div>
