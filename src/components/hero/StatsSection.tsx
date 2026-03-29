@@ -51,9 +51,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Eliminate Guesswork in Inventory Decisions"
+          description="Eliminate Guesswork in Inventory Decisions by AI"
           icon={<Zap className="w-8 h-8" />}
-          footer="Automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
+          footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
         />
       </motion.div>
 
