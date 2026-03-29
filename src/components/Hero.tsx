@@ -54,14 +54,14 @@ const Hero = () => {
             variants={itemVariants}
             className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
           >
-            <span className=" bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Data That Works for You.</span>
+            Your Factory Is Leaving Money on the Table. <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">AI Can Show You Exactly Where.</span>
           </motion.h1>
           
 <motion.p 
   variants={itemVariants}
   className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
 >
-  I help small <span className="font-bold">manufacturers</span> answer two expensive questions every day: <br/><span className="font-bold"> 1) When exactly should we reorder each SKU? <br/> 2) Which products and customers are actually making or losing us money? <br/> Get daily dashboards that turn spreadsheets into decisions - without hiring an analyst.</span>
+  I help small manufacturers use AI to stop losing money on bad inventory decisions and find out which customers and products are actually making them profit — <span className="font-bold">in under a week, using data they already have.</span>
   
 </motion.p>
 
