@@ -19,14 +19,14 @@ const HowItWorks = () => {
     {
       number: "3",
       icon: Gauge,
-      title: "I Build Your Dashboard (in 7 Days)",
-      description: "I design a simple, visual dashboard just for your manufacturing business – focused on production, costs, margins, and inventory."
+      title: "I Build Your AI-Powered Dashboard (in 7 Days)",
+      description: "I design a simple, AI-powered visual dashboard just for your manufacturing business – focused on production, costs, margins, and inventory."
     },
     {
       number: "4",
       icon: TrendingUp,
       title: "You Use It Every Day",
-      description: "The dashboard updates automatically every day with your latest data, so you can:",
+      description: "Your AI-powered dashboard updates automatically every day with your latest data, so you can:",
       bullets: [
         "See what's really happening in your factory",
         "Spot problems early",
@@ -142,7 +142,7 @@ const HowItWorks = () => {
           className="text-center mt-12"
         >
           <p className="text-xl font-semibold text-convrt-dark-blue">
-            No IT team. No setup. You run your factory — I turn your data into daily insights.
+            No IT team. No setup. You run your factory — AI turns your data into daily insights.
           </p>
         </motion.div>
       </div>

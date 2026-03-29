@@ -45,14 +45,14 @@ const ProblemStatement = () => {
             className="heading-lg text-convrt-dark-blue mb-6"
           >
             Scattered Spreadsheets vs. <br />
-            <span className=" bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Smart Dashboards</span>
+            <span className=" bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">AI-Powered Dashboards</span>
           </motion.h2>
           
           <motion.p 
             variants={itemVariants}
             className="text-convrt-dark-blue/80 text-lg mb-8 max-w-2xl mx-auto"
           >
-            Most small manufacturers are drowning in data but starving for insights. The difference between struggling and thriving is having the right information at the right time.
+            Most small manufacturers are drowning in data but starving for insights. AI bridges that gap — giving you the right information at the right time.
           </motion.p>
         </motion.div>
         
@@ -148,7 +148,7 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-6 flex items-center">
-              Smart Data Solutions
+              AI-Powered Data Solutions
             </h3>
             
             <div className="mb-8 rounded-xl overflow-hidden">
@@ -166,7 +166,7 @@ const ProblemStatement = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">Better informed decisions</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Real-time insights that drive action</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">AI-driven real-time insights that drive action</p>
                 </div>
               </li>
               
@@ -194,7 +194,7 @@ const ProblemStatement = () => {
             <div className="mt-12 grid grid-cols-3 gap-4">
               <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">
                 <Users className="w-8 h-8 text-green-600 mb-2" />
-                <div className="text-sm text-center text-green-600 font-medium">Smart Dashboards</div>
+                <div className="text-sm text-center text-green-600 font-medium">AI Dashboards</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">

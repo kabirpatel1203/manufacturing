@@ -13,11 +13,11 @@ const FAQ = () => {
     },
     {
       question: "How long does setup take?",
-      answer: "7 days from our kickoff call to your dashboard being live."
+      answer: "7 days from our kickoff call to your AI-powered dashboard being live."
     },
     {
       question: "What if I need changes later?",
-      answer: "Minor tweaks are included. Major additions (new dashboards, features) are quoted separately."
+      answer: "Minor tweaks are included. Major additions (new AI dashboards, features) are quoted separately."
     },
     {
       question: "Can I see a demo first?",

@@ -71,7 +71,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16"
           >
             <a href="https://calendly.com/kabirpatel-work/15min" target="_blank" rel="noopener noreferrer" className="button-primary flex items-center group font-inter font-medium">
-              Book Free Dashboard Demo
+              Book Free AI Dashboard Demo
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="#how-it-works" className="button-outline font-inter">

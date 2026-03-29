@@ -42,7 +42,7 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-convrt-dark-blue/80 leading-relaxed">
               <p>
-                I’m a data analytics expert with hands-on experience helping small manufacturers optimize operations and increase profits. I turn your existing data into clear, actionable insights - so you can make decisions with confidence.
+                I’m an AI & data analytics expert with hands-on experience helping small manufacturers optimize operations and increase profits. I use AI to turn your existing data into clear, actionable insights - so you can make decisions with confidence.
               </p>
               
               <p>

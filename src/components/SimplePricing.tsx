@@ -119,7 +119,7 @@ const SimplePricing = () => {
         >
           <motion.div variants={itemVariants} className="mb-12">
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              7-Day Free Trial - Build Dashboard on Your Data
+              7-Day Free Trial - AI-Powered Dashboard on Your Data
             </h2>
             <p className="text-convrt-dark-blue/80 text-xl">
               Then $99 setup + $29/month. Cancel anytime during trial, no hard feelings.
@@ -135,11 +135,11 @@ const SimplePricing = () => {
             <div className="space-y-4 mb-10">
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Custom dashboard design</span>
+                <span className="text-lg">Custom AI-powered dashboard design</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Automated daily reporting</span>
+                <span className="text-lg">AI-automated daily reporting</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
@@ -147,7 +147,7 @@ const SimplePricing = () => {
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Inventory reorder recommendations by SKU</span>
+                <span className="text-lg">AI-driven inventory reorder recommendations by SKU</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
