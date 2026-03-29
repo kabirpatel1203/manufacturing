@@ -26,7 +26,7 @@ const HowItWorks = () => {
       number: "4",
       icon: TrendingUp,
       title: "You Use It Every Day",
-      description: "The dashboard updates automatically every day with your latest data, so you can:",
+      description: "Your AI-powered dashboard updates automatically every day with your latest data, so you can:",
       bullets: [
         "See what's really happening in your factory",
         "Spot problems early",
