@@ -166,7 +166,7 @@ const ProblemStatement = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-lg text-convrt-dark-blue">Better informed decisions</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Real-time insights that drive action</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">AI-driven real-time insights that drive action</p>
                 </div>
               </li>
               
