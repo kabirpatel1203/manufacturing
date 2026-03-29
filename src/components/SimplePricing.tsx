@@ -119,7 +119,7 @@ const SimplePricing = () => {
         >
           <motion.div variants={itemVariants} className="mb-12">
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              7-Day Free Trial - Build Dashboard on Your Data
+              7-Day Free Trial - AI-Powered Dashboard on Your Data
             </h2>
             <p className="text-convrt-dark-blue/80 text-xl">
               Then $99 setup + $29/month. Cancel anytime during trial, no hard feelings.
