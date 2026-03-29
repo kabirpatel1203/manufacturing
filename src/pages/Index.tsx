@@ -101,7 +101,7 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="button-primary inline-flex items-center text-xl px-10 py-5 shadow-lg shadow-convrt-purple/10 hover:shadow-xl hover:shadow-convrt-purple/20 rounded-full group"
               >
-                Book Free Dashboard Demo
+                Book Free AI Dashboard Demo
                 <Calendar className="ml-2 w-6 h-6 transition-transform group-hover:scale-110" />
               </motion.a>
             </motion.div>

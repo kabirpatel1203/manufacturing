@@ -113,7 +113,7 @@ const Navbar = () => {
               className="button-primary w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Book Free Dashboard Demo
+              Book Free AI Dashboard Demo
             </a>
           </div>
         </div>
