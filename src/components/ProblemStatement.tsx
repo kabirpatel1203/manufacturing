@@ -148,7 +148,7 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-6 flex items-center">
-              Smart Data Solutions
+              AI-Powered Data Solutions
             </h3>
             
             <div className="mb-8 rounded-xl overflow-hidden">
