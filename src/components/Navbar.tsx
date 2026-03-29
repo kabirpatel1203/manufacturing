@@ -54,7 +54,7 @@ const Navbar = () => {
             Testimonials
           </a>
           <a href="https://calendly.com/kabirpatel-work/15min" target="_blank" rel="noopener noreferrer" className="button-primary">
-            Book Free Dashboard Demo
+             Book Free AI Dashboard Demo
           </a>
         </div>
         

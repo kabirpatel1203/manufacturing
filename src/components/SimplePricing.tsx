@@ -147,7 +147,7 @@ const SimplePricing = () => {
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />
-                <span className="text-lg">Inventory reorder recommendations by SKU</span>
+                <span className="text-lg">AI-driven inventory reorder recommendations by SKU</span>
               </div>
               <div className="flex items-center justify-center text-white/90">
                 <Check className="w-6 h-6 mr-3 flex-shrink-0 text-rose-100" />

@@ -194,7 +194,7 @@ const ProblemStatement = () => {
             <div className="mt-12 grid grid-cols-3 gap-4">
               <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">
                 <Users className="w-8 h-8 text-green-600 mb-2" />
-                <div className="text-sm text-center text-green-600 font-medium">Smart Dashboards</div>
+                <div className="text-sm text-center text-green-600 font-medium">AI Dashboards</div>
               </div>
               
               <div className="aspect-square flex flex-col items-center justify-center bg-green-100 rounded-xl p-3">

@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "What if I need changes later?",
-      answer: "Minor tweaks are included. Major additions (new dashboards, features) are quoted separately."
+      answer: "Minor tweaks are included. Major additions (new AI dashboards, features) are quoted separately."
     },
     {
       question: "Can I see a demo first?",

@@ -142,7 +142,7 @@ const HowItWorks = () => {
           className="text-center mt-12"
         >
           <p className="text-xl font-semibold text-convrt-dark-blue">
-            No IT team. No setup. You run your factory — I turn your data into daily insights.
+            No IT team. No setup. You run your factory — AI turns your data into daily insights.
           </p>
         </motion.div>
       </div>
