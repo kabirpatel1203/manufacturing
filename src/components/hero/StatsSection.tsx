@@ -41,9 +41,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       <motion.div variants={itemVariants} className="flex justify-center">
         <StatCard
           value=""
-          description="Stop Stockouts & Protect Margins"
+          description="Stop Stockouts & Protect Margins by AI"
           icon={<BarChart2 className="w-8 h-8" />}
-          footer="Get daily reorder alerts and see which customers and products truly drive profit"
+          footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
         />
       </motion.div>
 
