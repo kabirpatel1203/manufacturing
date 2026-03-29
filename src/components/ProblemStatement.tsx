@@ -52,7 +52,7 @@ const ProblemStatement = () => {
             variants={itemVariants}
             className="text-convrt-dark-blue/80 text-lg mb-8 max-w-2xl mx-auto"
           >
-            Most small manufacturers are drowning in data but starving for insights. The difference between struggling and thriving is having the right information at the right time.
+            Most small manufacturers are drowning in data but starving for insights. AI bridges that gap — giving you the right information at the right time.
           </motion.p>
         </motion.div>
         
