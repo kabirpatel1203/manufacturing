@@ -278,7 +278,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, serviceTyp
             <h3 className="text-lg font-semibold mb-2">Ready to Get Started?</h3>
             <p className="text-gray-600 mb-4">Let's discuss how this solution can transform your business.</p>
             <a
-              href="https://calendly.com/kabirpatel-work/25min"
+              href="https://calendly.com/kabirpatel-work/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="button-primary inline-flex items-center"
