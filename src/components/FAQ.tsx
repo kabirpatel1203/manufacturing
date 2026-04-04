@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "Can I see a demo first?",
-      answer: "Yes! Book a free 25-minute call and we'll show you examples."
+      answer: "Yes! Book a free 30-minute call and we'll show you examples."
     }
   ];
 

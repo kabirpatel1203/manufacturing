@@ -156,7 +156,7 @@ const SimplePricing = () => {
             </div>
 
             <motion.a
-              href="https://calendly.com/kabirpatel-work/25min"
+              href="https://calendly.com/kabirpatel-work/30min"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
