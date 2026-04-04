@@ -63,7 +63,7 @@ const Index = () => {
             >
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/20 bg-convrt-text-gradient mb-8">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span className="text-sm font-medium font-inter tracking-wide">Free 15-Minute Consultation</span>
+                <span className="text-sm font-medium font-inter tracking-wide">Free 25-Minute Consultation</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
