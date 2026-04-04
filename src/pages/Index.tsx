@@ -145,6 +145,7 @@ const Index = () => {
               viewport={{ once: true }}
               className="flex space-x-8"
             >
+              <a href="mailto:kabirpatel.work@gmail.com" className="text-gray-600 hover:text-convrt-purple transition-colors">kabirpatel.work@gmail.com</a>
               <a href="https://www.linkedin.com/in/kabir-patel1203/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-convrt-purple transition-colors">LinkedIn</a>
               <a href="#consultation" className="text-gray-600 hover:text-convrt-purple transition-colors">Contact</a>
             </motion.div>
