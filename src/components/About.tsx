@@ -50,15 +50,22 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-6">
+            <div className="mt-8 flex flex-wrap gap-4">
               <a 
                 href="https://www.linkedin.com/in/kabir-patel1203/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button-primary inline-flex items-center px-6 py-3  text-white rounded-lg hover:bg-[#005885] transition-all hover:scale-105 font-medium"
+                className="button-primary inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-[#005885] transition-all hover:scale-105 font-medium"
               >
                 Connect on LinkedIn
                 <ExternalLink className="ml-2 w-4 h-4" />
+              </a>
+              <a 
+                href="mailto:kabirpatel.work@gmail.com"
+                className="inline-flex items-center px-6 py-3 bg-white border-2 border-convrt-purple text-convrt-purple rounded-lg hover:bg-convrt-purple/10 transition-all hover:scale-105 font-medium"
+              >
+                <Mail className="mr-2 w-4 h-4" />
+                kabirpatel.work@gmail.com
               </a>
             </div>
           </motion.div>

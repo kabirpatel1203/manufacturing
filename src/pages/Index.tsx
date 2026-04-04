@@ -92,7 +92,7 @@ const Index = () => {
               </div>
               
               <motion.a
-                href="https://calendly.com/kabirpatel-work/15min"
+                href="https://calendly.com/kabirpatel-work/25min"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ scale: 0.9, opacity: 0 }}

@@ -107,7 +107,7 @@ const Navbar = () => {
               Testimonials
             </a>
             <a 
-              href="https://calendly.com/kabirpatel-work/15min" 
+              href="https://calendly.com/kabirpatel-work/25min" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-primary w-full text-center"
