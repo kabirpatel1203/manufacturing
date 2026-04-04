@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Award, Users, TrendingUp } from 'lucide-react';
+import { ExternalLink, Award, Users, TrendingUp, Mail } from 'lucide-react';
 
 const About = () => {
   const achievements = [
