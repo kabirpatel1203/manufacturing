@@ -184,7 +184,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             </div>
           </div>
 
-          {/* Bottom Banner */}
+          {/* Bottom Banner
           <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div className="text-lg font-semibold">
               Know exactly which products and customers make you money — and when to reorder
@@ -193,7 +193,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
               <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
               Live Data
             </div>
-          </div>
+          </div> */}
         </div>
       </motion.div>
 
@@ -202,25 +202,25 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         <motion.div variants={itemVariants} className="flex justify-center">
           <StatCard
             value=""
-            description="Stop Stockouts & Protect Margins by AI"
+            description="Stop Guessing When to Reorder"
             icon={<BarChart2 className="w-8 h-8" />}
-            footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
+            footer="Know exactly when to restock every SKU based on your own sales history - never tie up cash in slow movers again."
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex justify-center">
           <StatCard
             value=""
-            description="Eliminate Guesswork in Inventory Decisions by AI"
+            description="Not All Sales Are Good Sales"
             icon={<Zap className="w-8 h-8" />}
-            footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
+            footer="Some customers cost you more than they pay. See exactly who's making you money and who isn't."
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex justify-center">
           <StatCard
             value=""
-            description="Instant Insights via AI-Powered Interactive Database Bots"
+            description="Ask Your Business Anything. Get Answers Instantly."
             icon={<Bot className="w-8 h-8" />}
-            footer="Get answers to your data questions instantly with AI"
+            footer="No spreadsheets. No waiting. Just type your question and get the answer from your own company data."
           />
         </motion.div>
       </div>
