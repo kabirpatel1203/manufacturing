@@ -83,7 +83,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       {/* Main Dashboard Wrapper */}
       <motion.div 
         variants={itemVariants} 
-        className="border border-slate-200 bg-gradient-to-b from-slate-50 to-slate-100/50 overflow-hidden rounded-3xl shadow-md pb-20"
+        className="border border-slate-200 bg-gradient-to-b from-slate-50 to-slate-100/50 overflow-hidden rounded-3xl shadow-md pb-24"
       >
         {/* Dashboard Header */}
         <div className="bg-slate-900 px-8 py-5 text-white flex items-center justify-between border-b border-slate-800">
@@ -193,33 +193,32 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         </div>
       </motion.div>
 
-      {/* 3 Feature Cards — Flowing seamlessly out of the container above */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-8 -mt-12 relative z-10">
-        <motion.div variants={itemVariants} className="flex h-full">
+      {/* 3 Feature Cards — Wrapped in layout divs to prevent breaking internal components */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-8 -mt-16 relative z-10">
+        <motion.div variants={itemVariants} className="w-full bg-white rounded-2xl border border-slate-200 shadow-xl p-1">
           <StatCard
             value=""
             description="Smart Velocity Restocking"
             icon={<BarChart2 className="w-6 h-6 text-slate-700" />}
             footer="Know exactly when to restock every SKU based on your real velocity trends. Avoid frozen assets in dust-collecting items."
-            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex h-full">
+        
+        <motion.div variants={itemVariants} className="w-full bg-white rounded-2xl border border-slate-200 shadow-xl p-1">
           <StatCard
             value=""
             description="Contribution Margin Audit"
             icon={<Zap className="w-6 h-6 text-slate-700" />}
             footer="Not all volume is healthy. Identify hidden overhead costs and instantly see who is contributing to real margin gains."
-            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex h-full">
+        
+        <motion.div variants={itemVariants} className="w-full bg-white rounded-2xl border border-slate-200 shadow-xl p-1">
           <StatCard
             value=""
             description="Natural Language Analytics"
             icon={<Bot className="w-6 h-6 text-slate-700" />}
             footer="Ditch manual reporting formulas. Type any prompt to safely isolate, parse, and graph your cross-channel stack instantly."
-            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
       </div>
