@@ -13,45 +13,45 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.3
+        staggerChildren: 0.12,
+        delayChildren: 0.2
       }
     }
   };
 
   const itemVariants = {
-    hidden: { y: 40, opacity: 0 },
+    hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] }
+      transition: { duration: 0.6, ease: [0.215, 0.610, 0.355, 1.000] }
     }
   };
 
   const kpis = [
     {
       label: '3 Unprofitable Products',
-      tone: 'text-red-600',
-      bg: 'bg-red-50',
-      icon: <AlertTriangle className="w-5 h-5" />,
+      tone: 'text-rose-600',
+      bg: 'bg-rose-50/70 border-rose-100',
+      icon: <AlertTriangle className="w-4 h-4" />,
     },
     {
       label: '5 Slipping Customers',
-      tone: 'text-orange-600',
-      bg: 'bg-orange-50',
-      icon: <AlertTriangle className="w-5 h-5" />,
+      tone: 'text-amber-600',
+      bg: 'bg-amber-50/70 border-amber-100',
+      icon: <AlertTriangle className="w-4 h-4" />,
     },
     {
       label: '$12,400 Cash at Risk',
-      tone: 'text-red-600',
-      bg: 'bg-red-50',
-      icon: <DollarSign className="w-5 h-5" />,
+      tone: 'text-rose-600',
+      bg: 'bg-rose-50/70 border-rose-100',
+      icon: <DollarSign className="w-4 h-4" />,
     },
     {
       label: '8 Reorder Alerts Due',
-      tone: 'text-blue-600',
-      bg: 'bg-blue-50',
-      icon: <Bell className="w-5 h-5" />,
+      tone: 'text-sky-600',
+      bg: 'bg-sky-50/70 border-sky-100',
+      icon: <Bell className="w-4 h-4" />,
     },
   ];
 
@@ -78,99 +78,105 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="space-y-6"
+      className="space-y-0"
     >
-      {/* Dashboard */}
-      <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden">
-        
+      {/* Main Dashboard Wrapper */}
+      <motion.div 
+        variants={itemVariants} 
+        className="border border-slate-200 bg-gradient-to-b from-slate-50 to-slate-100/50 overflow-hidden rounded-3xl shadow-md pb-20"
+      >
         {/* Dashboard Header */}
-        <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
+        <div className="bg-slate-900 px-8 py-5 text-white flex items-center justify-between border-b border-slate-800">
           <div>
-            <div className="text-xs uppercase tracking-[0.2em] text-white/60">Dashboard Mockup</div>
-            <h3 className="text-lg font-semibold">Profit Clarity + Smart Reordering</h3>
+            <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400">Live Workspace</div>
+            <h3 className="text-xl font-medium tracking-tight mt-0.5">Profit Clarity &amp; Reordering</h3>
           </div>
-          <div className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/80">
-            <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-            Live Data
+          <div className="flex items-center gap-2 rounded-full bg-slate-800 px-3 py-1.5 text-xs text-slate-300 border border-slate-700">
+            <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            System Synced
           </div>
         </div>
 
-        <div className="p-6 space-y-6 bg-convrt-light-gray/30">
+        {/* Dashboard Canvas Area */}
+        <div className="p-6 md:p-8 space-y-8">
           
           {/* KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
-              <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`inline-flex h-10 w-10 items-center justify-center rounded-full ${kpi.bg} ${kpi.tone}`}>
+              <div key={kpi.label} className={`rounded-xl border ${kpi.bg} p-4 transition-all duration-200 hover:shadow-sm`}>
+                <div className="flex items-center justify-between mb-3">
+                  <div className={`inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white shadow-sm ${kpi.tone}`}>
                     {kpi.icon}
                   </div>
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${kpi.tone}`}>Alert</span>
+                  <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/80 border ${kpi.tone} opacity-80`}>
+                    Action Required
+                  </span>
                 </div>
-                <div className="text-lg font-semibold text-slate-900 leading-tight">{kpi.label}</div>
+                <div className="text-base font-semibold text-slate-800 tracking-tight leading-tight">{kpi.label}</div>
               </div>
             ))}
           </div>
 
-          {/* Charts */}
+          {/* Charts Grid */}
           <div className="grid gap-6 md:grid-cols-2">
             
             {/* Profit Bar Chart */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mb-4">
-                <h4 className="text-xl font-semibold text-slate-900">Product Profit vs Revenue</h4>
-                <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold text-slate-950 tracking-tight">Product Profit vs Revenue</h4>
+                <p className="mt-0.5 text-xs text-slate-500">Visualizing high-yield SKUs against structural loss-makers.</p>
               </div>
-              <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
+              <div className="h-80 rounded-xl bg-slate-50/50 px-4 py-4 flex items-end gap-3 border border-slate-100">
                 {profitBars.map((bar) => (
-                  <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2">
-                    <div className="w-full flex items-end justify-center h-80">
+                  <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2 h-full">
+                    <div className="w-full flex items-end justify-center h-full pb-1">
                       <div
-                        className={`w-full max-w-[42px] rounded-t-xl ${bar.profitable ? 'bg-emerald-500' : 'bg-red-500'}`}
+                        className={`w-full max-w-[36px] rounded-t-md transition-all duration-500 hover:opacity-90 ${
+                          bar.profitable ? 'bg-emerald-400/90 shadow-sm shadow-emerald-100' : 'bg-rose-400/90 shadow-sm shadow-rose-100'
+                        }`}
                         style={{ height: `${bar.value}%` }}
                       />
                     </div>
-                    <div className="text-xs font-medium text-slate-600">{bar.name}</div>
+                    <div className="text-[11px] font-medium text-slate-400">{bar.name}</div>
                   </div>
                 ))}
               </div>
-              <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable
+              <div className="mt-4 flex items-center gap-4 text-xs text-slate-500 px-1">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full bg-emerald-400" /> Net Profitable
                 </span>
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-red-500" />Losing money
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full bg-rose-400" /> Capital Bleed
                 </span>
               </div>
             </div>
 
             {/* Reorder Intelligence */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mb-4">
-                <h4 className="text-xl font-semibold text-slate-900">Reorder Intelligence</h4>
-                <p className="mt-1 text-sm text-slate-600">AI-predicted reorder dates based on your sales history</p>
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold text-slate-950 tracking-tight">Predictive Reordering</h4>
+                <p className="mt-0.5 text-xs text-slate-500">Automated restock pacing compiled from velocity metrics.</p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3.5">
                 {reorderItems.map((item) => (
-                  <div key={item.sku} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
-                    <div className="flex items-start justify-between gap-4">
+                  <div key={item.sku} className="rounded-xl border border-slate-100 bg-slate-50/60 p-3.5 transition-colors hover:bg-slate-50">
+                    <div className="flex items-center justify-between gap-4">
                       <div>
-                        <div className="flex items-center gap-2 text-slate-900 font-semibold">
-                          <Package className="h-4 w-4 text-slate-500" />
+                        <div className="flex items-center gap-2 text-sm font-medium text-slate-800">
+                          <Package className="h-4 w-4 text-slate-400" />
                           {item.sku}
                         </div>
-                        <div className="mt-1 inline-flex items-center gap-2 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">
-                          <TrendingUp className="h-3.5 w-3.5" />
-                          Reorder in {item.days} days
+                        <div className="mt-1.5 inline-flex items-center gap-1.5 rounded-md bg-sky-50 px-2 py-0.5 text-xs font-medium text-sky-700 border border-sky-100">
+                          <TrendingUp className="h-3 w-3" />
+                          Restock in {item.days} days
                         </div>
                       </div>
-                      <div className="w-24 h-12 rounded-xl bg-white border border-slate-200 p-2 flex items-end">
+                      <div className="w-24 h-10 rounded-lg bg-white border border-slate-100 p-1 flex items-end">
                         <svg viewBox="0 0 100 40" className="h-full w-full">
                           <polyline
                             fill="none"
-                            stroke="#0F172A"
-                            strokeOpacity="0.35"
-                            strokeWidth="2.5"
+                            stroke="#0ea5e9"
+                            strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             points={item.points.map((point, index) => `${index * 16},${40 - point / 2}`).join(' ')}
@@ -182,45 +188,38 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                 ))}
               </div>
             </div>
-          </div>
 
-          {/* Bottom Banner
-          <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <div className="text-lg font-semibold">
-              Know exactly which products and customers make you money — and when to reorder
-            </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/80 whitespace-nowrap">
-              <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-              Live Data
-            </div>
-          </div> */}
+          </div>
         </div>
       </motion.div>
 
-      {/* 3 Feature Cards — BELOW Dashboard */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <motion.div variants={itemVariants} className="flex justify-center">
+      {/* 3 Feature Cards — Flowing seamlessly out of the container above */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-8 -mt-12 relative z-10">
+        <motion.div variants={itemVariants} className="flex h-full">
           <StatCard
             value=""
-            description="Stop Guessing When to Reorder"
-            icon={<BarChart2 className="w-8 h-8" />}
-            footer="Know exactly when to restock every SKU based on your own sales history - never tie up cash in slow movers again."
+            description="Smart Velocity Restocking"
+            icon={<BarChart2 className="w-6 h-6 text-slate-700" />}
+            footer="Know exactly when to restock every SKU based on your real velocity trends. Avoid frozen assets in dust-collecting items."
+            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
+        <motion.div variants={itemVariants} className="flex h-full">
           <StatCard
             value=""
-            description="Not All Sales Are Good Sales"
-            icon={<Zap className="w-8 h-8" />}
-            footer="Some customers cost you more than they pay. See exactly who's making you money and who isn't."
+            description="Contribution Margin Audit"
+            icon={<Zap className="w-6 h-6 text-slate-700" />}
+            footer="Not all volume is healthy. Identify hidden overhead costs and instantly see who is contributing to real margin gains."
+            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
+        <motion.div variants={itemVariants} className="flex h-full">
           <StatCard
             value=""
-            description="Ask Your Business Anything. Get Answers Instantly."
-            icon={<Bot className="w-8 h-8" />}
-            footer="No spreadsheets. No waiting. Just type your question and get the answer from your own company data."
+            description="Natural Language Analytics"
+            icon={<Bot className="w-6 h-6 text-slate-700" />}
+            footer="Ditch manual reporting formulas. Type any prompt to safely isolate, parse, and graph your cross-channel stack instantly."
+            className="shadow-xl bg-white rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between"
           />
         </motion.div>
       </div>
