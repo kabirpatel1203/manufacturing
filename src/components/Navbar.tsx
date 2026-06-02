@@ -39,9 +39,9 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href={manufacturingPath('#about')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          {/* <a href={manufacturingPath('#about')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             About
-          </a>
+          </a> */}
           <a href={manufacturingPath('#how-it-works')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             How It Works
           </a>

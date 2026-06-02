@@ -62,7 +62,7 @@ const Hero = () => {
   variants={itemVariants}
   className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
 >
-  I help small manufacturers use AI to stop losing money on bad inventory decisions and find out which customers and products are actually making them profit — <span className="font-bold">in under a week, using data they already have.</span>
+  We help small manufacturers use AI to stop losing money on bad inventory decisions and find out which customers and products are actually making them profit - <span className="font-bold">in under a week, using data they already have.</span>
   
 </motion.p>
 

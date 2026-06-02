@@ -2,7 +2,8 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import About from '@/components/About';
+// About component intentionally commented out to remove section from site
+// import About from '@/components/About';
 import HowItWorks from '@/components/HowItWorks';
 import ProblemStatement from '@/components/ProblemStatement';
 import CaseStudy from '@/components/CaseStudy';
@@ -45,7 +46,7 @@ const Index = () => {
       
       <main className="pt-16">
         <Hero />
-        <About />
+        {/* <About /> */}
         <HowItWorks />
         <SimplePricing />
         <ProblemStatement />
