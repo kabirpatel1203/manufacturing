@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertTriangle, Bell, DollarSign, TrendingUp, Package } from 'lucide-react';
+import { AlertTriangle, Bell, DollarSign, TrendingUp, Package, BarChart2, Zap, Bot } from 'lucide-react';
 import StatCard from './StatCard';
-import { BarChart2, Zap, Bot } from 'lucide-react';
 
 interface StatsSectionProps {
   statsRef: React.RefObject<HTMLDivElement>;
@@ -81,36 +80,10 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       viewport={{ once: true, margin: "-100px" }}
       className="space-y-6"
     >
-      {/* Top 3 Stat Cards — from big component */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <motion.div variants={itemVariants} className="flex justify-center">
-          <StatCard
-            value=""
-            description="Stop Stockouts & Protect Margins by AI"
-            icon={<BarChart2 className="w-8 h-8" />}
-            footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
-          />
-        </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
-          <StatCard
-            value=""
-            description="Eliminate Guesswork in Inventory Decisions by AI"
-            icon={<Zap className="w-8 h-8" />}
-            footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
-          />
-        </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
-          <StatCard
-            value=""
-            description="Instant Insights via AI-Powered Interactive Database Bots"
-            icon={<Bot className="w-8 h-8" />}
-            footer="Get answers to your data questions instantly with AI"
-          />
-        </motion.div>
-      </div>
-
-      {/* Dashboard — from small component */}
+      {/* Dashboard */}
       <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden">
+        
+        {/* Dashboard Header */}
         <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.2em] text-white/60">Dashboard Mockup</div>
@@ -123,6 +96,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         </div>
 
         <div className="p-6 space-y-6 bg-convrt-light-gray/30">
+          
           {/* KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
@@ -140,6 +114,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
 
           {/* Charts */}
           <div className="grid gap-6 md:grid-cols-2">
+            
             {/* Profit Bar Chart */}
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="mb-4">
@@ -160,8 +135,12 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                 ))}
               </div>
               <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
-                <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable</span>
-                <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-red-500" />Losing money</span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-red-500" />Losing money
+                </span>
               </div>
             </div>
 
@@ -204,34 +183,6 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
               </div>
             </div>
           </div>
-          
-                      {/* 3 Feature Cards Below Dashboard */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
-              <motion.div variants={itemVariants} className="flex justify-center">
-                <StatCard
-                  value=""
-                  description="Stop Stockouts & Protect Margins by AI"
-                  icon={<BarChart2 className="w-8 h-8" />}
-                  footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
-                />
-              </motion.div>
-              <motion.div variants={itemVariants} className="flex justify-center">
-                <StatCard
-                  value=""
-                  description="Eliminate Guesswork in Inventory Decisions by AI"
-                  icon={<Zap className="w-8 h-8" />}
-                  footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
-                />
-              </motion.div>
-              <motion.div variants={itemVariants} className="flex justify-center">
-                <StatCard
-                  value=""
-                  description="Instant Insights via AI-Powered Interactive Database Bots"
-                  icon={<Bot className="w-8 h-8" />}
-                  footer="Get answers to your data questions instantly with AI"
-                />
-              </motion.div>
-            </div>
 
           {/* Bottom Banner */}
           <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
@@ -245,6 +196,35 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           </div>
         </div>
       </motion.div>
+
+      {/* 3 Feature Cards — BELOW Dashboard */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Stop Stockouts & Protect Margins by AI"
+            icon={<BarChart2 className="w-8 h-8" />}
+            footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Eliminate Guesswork in Inventory Decisions by AI"
+            icon={<Zap className="w-8 h-8" />}
+            footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Instant Insights via AI-Powered Interactive Database Bots"
+            icon={<Bot className="w-8 h-8" />}
+            footer="Get answers to your data questions instantly with AI"
+          />
+        </motion.div>
+      </div>
+
     </motion.div>
   );
 };
