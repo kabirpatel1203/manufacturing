@@ -2,38 +2,18 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
-
-const LegacyManufacturingRedirect = () => {
-  const location = useLocation();
-
-  if (location.pathname === "/manufacturing") {
-    return <Navigate to={`/${location.search}${location.hash}`} replace />;
-  }
-
-  if (location.pathname.startsWith("/manufacturing/")) {
-    return (
-      <Navigate
-        to={`${location.pathname.slice("/manufacturing".length)}${location.search}${location.hash}`}
-        replace
-      />
-    );
-  }
-
-  return null;
-};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <LegacyManufacturingRedirect />
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
