@@ -113,10 +113,10 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                 <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
               </div>
 
-              <div className="h-56 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
+              <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
                 {profitBars.map((bar) => (
                   <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2">
-                    <div className="w-full flex items-end justify-center h-40">
+                    <div className="w-full flex items-end justify-center h-80">
                       <div
                         className={`w-full max-w-[42px] rounded-t-xl ${bar.profitable ? 'bg-emerald-500' : 'bg-red-500'}`}
                         style={{ height: `${bar.value}%` }}
