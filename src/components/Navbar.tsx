@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { manufacturingPath } from '@/lib/routes';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center space-x-3">
+          <a href={manufacturingPath()} className="flex items-center space-x-3">
             <img
               src="LOGO.png" // Use the public path
               alt="Kabir Logo"
@@ -38,19 +39,19 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          <a href={manufacturingPath('#about')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             About
           </a>
-          <a href="#how-it-works" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          <a href={manufacturingPath('#how-it-works')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             How It Works
           </a>
-          <a href="#pricing" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          <a href={manufacturingPath('#pricing')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             Pricing
           </a>
-          <a href="#case-study" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          <a href={manufacturingPath('#case-study')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             Case Study
           </a>
-          <a href="#testimonials" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
+          <a href={manufacturingPath('#testimonials')} className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
             Testimonials
           </a>
           <a href="https://calendly.com/kabirpatel-work/30min" target="_blank" rel="noopener noreferrer" className="button-primary">
@@ -72,35 +73,35 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6">
           <div className="flex flex-col space-y-4">
             <a 
-              href="#about" 
+              href={manufacturingPath('#about')} 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a 
-              href="#how-it-works" 
+              href={manufacturingPath('#how-it-works')} 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How It Works
             </a>
             <a 
-              href="#pricing" 
+              href={manufacturingPath('#pricing')} 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pricing
             </a>
             <a 
-              href="#case-study" 
+              href={manufacturingPath('#case-study')} 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Case Study
             </a>
             <a 
-              href="#testimonials" 
+              href={manufacturingPath('#testimonials')} 
               className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

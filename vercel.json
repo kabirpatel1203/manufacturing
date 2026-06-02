@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/manufacturing",
+      "destination": "/"
+    },
+    {
+      "source": "/manufacturing/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}

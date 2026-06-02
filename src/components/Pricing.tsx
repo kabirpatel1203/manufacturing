@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Check, Zap } from 'lucide-react';
+import { manufacturingPath } from '@/lib/routes';
 
 const Pricing = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -165,7 +166,7 @@ const Pricing = () => {
               </p>
             </div>
             <div>
-              <a href="#cta" className="button-primary whitespace-nowrap">
+              <a href={manufacturingPath('#consultation')} className="button-primary whitespace-nowrap">
                 Get a Free Demo
               </a>
             </div>

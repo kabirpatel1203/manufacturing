@@ -11,6 +11,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, Calendar, Clock } from 'lucide-react';
+import { manufacturingPath } from '@/lib/routes';
 
 const Index = () => {
   useEffect(() => {
@@ -124,7 +125,7 @@ const Index = () => {
               {/* </div> */}
 
                       <div className="flex items-center">
-          <a href="/" className="flex items-center space-x-3">
+                  <a href={manufacturingPath()} className="flex items-center space-x-3">
             <img
               src="LOGO.png" // Use the public path
               alt="Kabir Logo"
@@ -147,7 +148,7 @@ const Index = () => {
             >
               <a href="mailto:kabirpatel.work@gmail.com" className="text-gray-600 hover:text-convrt-purple transition-colors">kabirpatel.work@gmail.com</a>
               <a href="https://www.linkedin.com/in/kabir-patel1203/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-convrt-purple transition-colors">LinkedIn</a>
-              <a href="#consultation" className="text-gray-600 hover:text-convrt-purple transition-colors">Contact</a>
+              <a href={manufacturingPath('#consultation')} className="text-gray-600 hover:text-convrt-purple transition-colors">Contact</a>
             </motion.div>
           </div>
         </div>

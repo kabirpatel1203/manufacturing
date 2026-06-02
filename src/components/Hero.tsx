@@ -5,6 +5,7 @@ import { ArrowRight, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import PlatformDemo from './hero/PlatformDemo';
 import StatsSection from './hero/StatsSection';
+import { manufacturingPath } from '@/lib/routes';
 
 const Hero = () => {
   const statsRef = useRef<HTMLDivElement>(null);
@@ -74,7 +75,7 @@ const Hero = () => {
               Book Free AI Dashboard Demo
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="#how-it-works" className="button-outline font-inter">
+            <a href={manufacturingPath('#how-it-works')} className="button-outline font-inter">
               How It Works
             </a>
           </motion.div>
