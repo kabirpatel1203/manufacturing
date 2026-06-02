@@ -176,7 +176,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
 
           <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div>
-              <div className="text-lg font-semibold">Know exactly which products and customers make you money — and when to reorder</div>
+              <div className="text-lg font-semibold">Know exactly which products and customers make you money - and when to reorder</div>
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/80 whitespace-nowrap">
               <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
