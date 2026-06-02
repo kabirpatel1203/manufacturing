@@ -91,7 +91,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           </div>
         </div>
 
-        <div className="p-6 space-y-6 bg-slate-50/40 pt-6 pb-6">
+        <div className="p-6 space-y-6 bg-slate-50/40">
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
               <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
