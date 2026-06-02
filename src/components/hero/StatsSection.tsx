@@ -81,7 +81,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       className="space-y-6"
     >
       {/* Dashboard */}
-      <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden">
+      {/* <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden"> */}
         
         {/* Dashboard Header */}
         <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
@@ -185,7 +185,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           </div>
 
         </div>
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* 3 Feature Cards — BELOW Dashboard */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
