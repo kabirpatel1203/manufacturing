@@ -95,7 +95,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           </div>
         </div>
 
-        <div className="p-6 space-y-6 bg-convrt-light-gray/30">
+        {/* <div className="p-6 space-y-6 bg-convrt-light-gray/30"> */}
           
           {/* KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -184,7 +184,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             </div>
           </div>
 
-        </div>
+        {/* </div> */}
       </motion.div>
 
       {/* 3 Feature Cards — BELOW Dashboard */}
