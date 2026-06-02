@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href={manufacturingPath()} className="flex items-center space-x-3">
             <img
-              src="LOGO.png" // Use the public path
-              alt="Kabir Logo"
+              src={manufacturingPath('logo_new-nobg.png')}
+              alt="Legnus Analytics Logo"
               className="w-30 h-20 rounded-xl"
             />
           </a>

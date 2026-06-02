@@ -127,14 +127,13 @@ const Index = () => {
                       <div className="flex items-center">
                   <a href={manufacturingPath()} className="flex items-center space-x-3">
             <img
-              src="LOGO.png" // Use the public path
-              alt="Kabir Logo"
+              src={manufacturingPath('logo_new-nobg.png')}
+              alt="Legnus Analytics Logo"
               className="w-25 h-12 rounded-xl"
             />
           </a>
         </div>
               <div>
-                {/* <h3 className="text-xl font-bold text-convrt-dark-blue">Kabir - Your Data Partner</h3> */}
                 <p className="text-sm text-gray-600 mt-1">© {new Date().getFullYear()} All rights reserved.</p>
               </div>
             </motion.div>

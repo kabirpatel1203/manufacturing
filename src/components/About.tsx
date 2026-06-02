@@ -37,7 +37,7 @@ const About = () => {
             </div>
             
             <h2 className="heading-lg text-convrt-dark-blue mb-6">
-              I'm <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Kabir</span> — Your Data Partner
+              I'm <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">Legnus Analytics</span>
             </h2>
             
             <div className="space-y-6 text-lg text-convrt-dark-blue/80 leading-relaxed">
