@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AlertTriangle, Bell, DollarSign, TrendingUp, Package } from 'lucide-react';
+import StatCard from './StatCard';
+import { BarChart2, Zap, Bot } from 'lucide-react';
 
 interface StatsSectionProps {
   statsRef: React.RefObject<HTMLDivElement>;
@@ -79,6 +81,35 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       viewport={{ once: true, margin: "-100px" }}
       className="space-y-6"
     >
+      {/* Top 3 Stat Cards — from big component */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Stop Stockouts & Protect Margins by AI"
+            icon={<BarChart2 className="w-8 h-8" />}
+            footer="Get daily AI-powered reorder alerts and see which customers and products truly drive profit"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Eliminate Guesswork in Inventory Decisions by AI"
+            icon={<Zap className="w-8 h-8" />}
+            footer="AI-automated reorder points by SKU from your past sales + lead times—stop tying up cash in slow movers"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex justify-center">
+          <StatCard
+            value=""
+            description="Instant Insights via AI-Powered Interactive Database Bots"
+            icon={<Bot className="w-8 h-8" />}
+            footer="Get answers to your data questions instantly with AI"
+          />
+        </motion.div>
+      </div>
+
+      {/* Dashboard — from small component */}
       <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden">
         <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
           <div>
@@ -92,6 +123,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         </div>
 
         <div className="p-6 space-y-6 bg-convrt-light-gray/30">
+          {/* KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
               <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -106,13 +138,14 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             ))}
           </div>
 
+          {/* Charts */}
           <div className="grid gap-6 md:grid-cols-2">
+            {/* Profit Bar Chart */}
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="mb-4">
                 <h4 className="text-xl font-semibold text-slate-900">Product Profit vs Revenue</h4>
                 <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
               </div>
-
               <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
                 {profitBars.map((bar) => (
                   <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2">
@@ -126,19 +159,18 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                   </div>
                 ))}
               </div>
-
               <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
                 <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable</span>
                 <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-red-500" />Losing money</span>
               </div>
             </div>
 
+            {/* Reorder Intelligence */}
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="mb-4">
                 <h4 className="text-xl font-semibold text-slate-900">Reorder Intelligence</h4>
                 <p className="mt-1 text-sm text-slate-600">AI-predicted reorder dates based on your sales history</p>
               </div>
-
               <div className="space-y-4">
                 {reorderItems.map((item) => (
                   <div key={item.sku} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
@@ -153,7 +185,6 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                           Reorder in {item.days} days
                         </div>
                       </div>
-
                       <div className="w-24 h-12 rounded-xl bg-white border border-slate-200 p-2 flex items-end">
                         <svg viewBox="0 0 100 40" className="h-full w-full">
                           <polyline
@@ -174,9 +205,10 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             </div>
           </div>
 
+          {/* Bottom Banner */}
           <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <div>
-              <div className="text-lg font-semibold">Know exactly which products and customers make you money - and when to reorder</div>
+            <div className="text-lg font-semibold">
+              Know exactly which products and customers make you money — and when to reorder
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/80 whitespace-nowrap">
               <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
@@ -190,7 +222,3 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
 };
 
 export default StatsSection;
-
-
-
-
