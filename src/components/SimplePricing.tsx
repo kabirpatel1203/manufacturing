@@ -108,7 +108,7 @@ const SimplePricing = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden bg-[#F9F6F3]" id="pricing">
+    <section className="relative py-20 overflow-hidden bg-convrt-light-gray/30" id="pricing">
       <div className="container-section relative z-10">
         <motion.div
           initial="hidden"
