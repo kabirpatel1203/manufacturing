@@ -191,6 +191,8 @@
 
 // export default StatsSection;
 
+
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AlertTriangle, Bell, DollarSign, TrendingUp, Package } from 'lucide-react';
@@ -285,6 +287,8 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         </div>
 
         <div className="p-6 space-y-6 bg-slate-50/40">
+
+          {/* KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
               <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -299,17 +303,17 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             ))}
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 items-stretch">
+          {/* Full-width flat gray rectangle — no rounded corners, contains both charts */}
+          <div className="w-full bg-slate-100 border border-slate-200 p-6 grid gap-6 md:grid-cols-2">
 
-            {/* LEFT CARD — Product Profit vs Revenue */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
-              <div className="mb-4">
+            {/* LEFT — Product Profit vs Revenue */}
+            <div className="flex flex-col gap-4">
+              <div>
                 <h4 className="text-xl font-semibold text-slate-900">Product Profit vs Revenue</h4>
                 <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
               </div>
 
-              {/* Gray box — flex-1 so it fills all remaining card height */}
-              <div className="flex-1 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
+              <div className="w-full flex items-end gap-3 px-2" style={{ height: '200px' }}>
                 {profitBars.map((bar) => (
                   <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2 h-full">
                     <div className="w-full flex items-end justify-center" style={{ flex: 1 }}>
@@ -323,22 +327,22 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                 ))}
               </div>
 
-              <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
+              <div className="flex items-center gap-4 text-sm text-slate-600">
                 <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable</span>
                 <span className="inline-flex items-center gap-2"><span className="h-3 w-3 rounded-full bg-red-500" />Losing money</span>
               </div>
             </div>
 
-            {/* RIGHT CARD — Reorder Intelligence */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
-              <div className="mb-4">
+            {/* RIGHT — Reorder Intelligence */}
+            <div className="flex flex-col gap-4">
+              <div>
                 <h4 className="text-xl font-semibold text-slate-900">Reorder Intelligence</h4>
                 <p className="mt-1 text-sm text-slate-600">AI-predicted reorder dates based on your sales history</p>
               </div>
 
-              <div className="flex-1 space-y-4">
+              <div className="space-y-3">
                 {reorderItems.map((item) => (
-                  <div key={item.sku} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
+                  <div key={item.sku} className="rounded-2xl border border-slate-200 bg-white p-4">
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <div className="flex items-center gap-2 text-slate-900 font-semibold">
@@ -350,7 +354,6 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                           Reorder in {item.days} days
                         </div>
                       </div>
-
                       <div className="w-24 h-12 rounded-xl bg-white border border-slate-200 p-2 flex items-end">
                         <svg viewBox="0 0 100 40" className="h-full w-full">
                           <polyline
@@ -372,6 +375,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
 
           </div>
 
+          {/* Bottom banner */}
           <div className="rounded-2xl bg-[#2C3E50] px-5 py-4 text-white flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div>
               <div className="text-lg font-semibold">Know exactly which products and customers make you money — and when to reorder</div>
@@ -381,6 +385,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
               Live Data
             </div>
           </div>
+
         </div>
       </motion.div>
     </motion.div>
@@ -388,5 +393,3 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
 };
 
 export default StatsSection;
-
-
