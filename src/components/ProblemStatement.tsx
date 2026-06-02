@@ -67,7 +67,7 @@ const ProblemStatement = () => {
           <motion.div 
             variants={itemVariants}
             whileHover={{ y: -5 }}
-            className="bg-[#F9F6F3] rounded-[20px] p-8 border border-gray-100 relative overflow-hidden group"
+            className="bg-convrt-light-gray/30 rounded-[20px] p-8 border border-gray-100 relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 bg-red-50 px-4 py-2 rounded-bl-2xl">
               <X className="w-5 h-5 text-[#EA384C]" />

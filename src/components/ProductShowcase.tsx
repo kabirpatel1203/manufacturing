@@ -62,7 +62,7 @@ const ProductShowcase = () => {
         >
           <motion.div 
             variants={itemVariants}
-            className="relative bg-[#F9F6F3] rounded-[20px] overflow-hidden border border-gray-200"
+            className="relative bg-convrt-light-gray/30 rounded-[20px] overflow-hidden border border-gray-200"
           >
             <div className="px-8 py-6 border-b border-gray-200 flex items-center justify-between">
               <div className="flex items-center space-x-2">
@@ -110,7 +110,7 @@ const ProductShowcase = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="p-4 bg-[#F9F6F3] rounded-lg border border-gray-100">
+                  <div className="p-4 bg-convrt-light-gray/30 rounded-lg border border-gray-100">
                     <p className="text-gray-700 text-sm leading-relaxed">
                       Based on social media activity, your prospect shows interest in sustainability initiatives and has recently shared content about AI implementation in their industry.
                     </p>

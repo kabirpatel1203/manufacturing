@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen pt-20 pb-32 overflow-hidden bg-[#F9F6F3]">
+    <section className="relative min-h-screen pt-20 pb-32 overflow-hidden bg-convrt-light-gray/30">
       <AnimatedBackground />
       
       <div className="container-section relative z-10">

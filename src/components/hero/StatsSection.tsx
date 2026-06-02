@@ -79,7 +79,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       viewport={{ once: true, margin: "-100px" }}
       className="space-y-6"
     >
-      <motion.div variants={itemVariants} className="rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)] overflow-hidden">
+      <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden">
         <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.2em] text-white/60">Dashboard Mockup</div>
@@ -91,7 +91,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
           </div>
         </div>
 
-        <div className="p-6 space-y-6 bg-slate-50/40">
+        <div className="p-6 space-y-6 bg-convrt-light-gray/30">
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {kpis.map((kpi) => (
               <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
