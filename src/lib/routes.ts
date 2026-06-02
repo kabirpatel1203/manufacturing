@@ -1,3 +1,9 @@
-export const MANUFACTURING_BASE_PATH = "/manufacturing";
+export const manufacturingPath = (suffix = "") => {
+	if (!suffix) {
+		return "/";
+	}
 
-export const manufacturingPath = (suffix = "") => `${MANUFACTURING_BASE_PATH}${suffix}`;
+	const normalizedSuffix = suffix.startsWith("/") ? suffix.slice(1) : suffix;
+
+	return `/${normalizedSuffix}`;
+};
