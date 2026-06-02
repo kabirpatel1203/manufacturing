@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import AnimatedBackground from './AnimatedBackground';
 import { ArrowRight, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
-import PlatformDemo from './hero/PlatformDemo';
+// import PlatformDemo from './hero/PlatformDemo';
 import StatsSection from './hero/StatsSection';
 import { manufacturingPath } from '@/lib/routes';
 
@@ -85,7 +85,7 @@ const Hero = () => {
             ref={demoRef}
             variants={itemVariants}
           >
-            <PlatformDemo />
+            {/* <PlatformDemo /> */}
           </motion.div>
           
           {/* Stats Section - Enhanced with better styling and icons */}
