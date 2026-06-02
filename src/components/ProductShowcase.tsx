@@ -110,7 +110,7 @@ const ProductShowcase = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="p-4 bg-[#F9F6F3] rounded-lg border border-gray-100">
+                  <div className="p-4 bg-white rounded-lg border border-gray-100">
                     <p className="text-gray-700 text-sm leading-relaxed">
                       Based on social media activity, your prospect shows interest in sustainability initiatives and has recently shared content about AI implementation in their industry.
                     </p>
