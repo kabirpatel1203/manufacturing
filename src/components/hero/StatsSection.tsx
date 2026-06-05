@@ -121,7 +121,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                 <h4 className="text-xl font-semibold text-slate-900">Product Profit vs Revenue</h4>
                 <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
               </div>
-              <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100">
+              {/* <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100"> */}
                 {profitBars.map((bar) => (
                   <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2">
                     <div className="w-full flex items-end justify-center h-80">
@@ -133,7 +133,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                     <div className="text-xs font-medium text-slate-600">{bar.name}</div>
                   </div>
                 ))}
-              </div>
+              {/* </div> */}
               <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
                 <span className="inline-flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable
