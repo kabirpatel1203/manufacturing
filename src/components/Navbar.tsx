@@ -32,7 +32,7 @@ const Navbar = () => {
             <img
               src={manufacturingPath('logo_new-nobg.png')}
               alt="Legnus Analytics Logo"
-              className="w-30 h-20 rounded-xl"
+              className="w-23 h-14 rounded-xl"
             />
           </a>
         </div>

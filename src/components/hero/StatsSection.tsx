@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertTriangle, Bell, DollarSign, TrendingUp, Package, BarChart2, Zap, Bot } from 'lucide-react';
+import { AlertTriangle, Bell, DollarSign, TrendingUp, Package, BarChart2, Zap, Bot, Clock } from 'lucide-react';
 import StatCard from './StatCard';
 
 interface StatsSectionProps {
@@ -14,9 +14,9 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -24,34 +24,38 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] }
-    }
+      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+    },
   };
 
   const kpis = [
     {
       label: '3 Unprofitable Products',
       tone: 'text-red-600',
-      bg: 'bg-red-50',
-      icon: <AlertTriangle className="w-5 h-5" />,
+      iconBg: 'bg-red-50',
+      tagBg: 'bg-red-50 text-red-600',
+      icon: <AlertTriangle className="w-4 h-4" />,
     },
     {
       label: '5 Slipping Customers',
-      tone: 'text-orange-600',
-      bg: 'bg-orange-50',
-      icon: <AlertTriangle className="w-5 h-5" />,
+      tone: 'text-amber-600',
+      iconBg: 'bg-amber-50',
+      tagBg: 'bg-amber-50 text-amber-600',
+      icon: <AlertTriangle className="w-4 h-4" />,
     },
     {
       label: '$12,400 Cash at Risk',
       tone: 'text-red-600',
-      bg: 'bg-red-50',
-      icon: <DollarSign className="w-5 h-5" />,
+      iconBg: 'bg-red-50',
+      tagBg: 'bg-red-50 text-red-600',
+      icon: <DollarSign className="w-4 h-4" />,
     },
     {
       label: '8 Reorder Alerts Due',
       tone: 'text-blue-600',
-      bg: 'bg-blue-50',
-      icon: <Bell className="w-5 h-5" />,
+      iconBg: 'bg-blue-50',
+      tagBg: 'bg-blue-50 text-blue-600',
+      icon: <Bell className="w-4 h-4" />,
     },
   ];
 
@@ -65,11 +69,41 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
   ];
 
   const reorderItems = [
-    { sku: 'SKU-104', days: 6, points: [35, 42, 40, 55, 62, 70, 78] },
-    { sku: 'SKU-212', days: 11, points: [68, 60, 63, 58, 54, 50, 46] },
-    { sku: 'SKU-317', days: 3, points: [22, 25, 28, 32, 38, 44, 51] },
-    { sku: 'SKU-408', days: 9, points: [58, 61, 59, 65, 68, 71, 74] },
+    {
+      sku: 'SKU-317',
+      days: 3,
+      urgency: 'urgent',
+      points: [22, 25, 28, 32, 38, 44, 51],
+      stroke: '#EF4444',
+    },
+    {
+      sku: 'SKU-104',
+      days: 6,
+      urgency: 'soon',
+      points: [35, 42, 40, 55, 62, 70, 78],
+      stroke: '#D97706',
+    },
+    {
+      sku: 'SKU-408',
+      days: 9,
+      urgency: 'ok',
+      points: [58, 61, 59, 65, 68, 71, 74],
+      stroke: '#059669',
+    },
+    {
+      sku: 'SKU-212',
+      days: 11,
+      urgency: 'ok',
+      points: [68, 60, 63, 58, 54, 50, 46],
+      stroke: '#059669',
+    },
   ];
+
+  const urgencyStyles: Record<string, string> = {
+    urgent: 'bg-red-50 text-red-600',
+    soon: 'bg-amber-50 text-amber-600',
+    ok: 'bg-emerald-50 text-emerald-600',
+  };
 
   return (
     <motion.div
@@ -77,128 +111,168 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: true, margin: '-100px' }}
       className="space-y-6"
     >
-      {/* Dashboard */}
-      {/* <motion.div variants={itemVariants} className="border-y border-slate-200 bg-convrt-light-gray/30 overflow-hidden"> */}
-        
-        {/* Dashboard Header */}
-        <div className="bg-[#2C3E50] px-6 py-4 text-white flex items-center justify-between">
+      {/* Dashboard Card */}
+      <motion.div
+        variants={itemVariants}
+        className="rounded-2xl border border-slate-200 overflow-hidden bg-white w-[110%] -mx-[5%]"
+      >
+        {/* Header */}
+        <div className="bg-slate-800 px-6 py-4 flex items-center justify-between">
           <div>
-            <div className="text-xs uppercase tracking-[0.2em] text-white/60">Dashboard Mockup</div>
-            <h3 className="text-lg font-semibold">Profit Clarity + Smart Reordering</h3>
+            <div className="text-[10px] uppercase tracking-[0.2em] text-white/45 mb-0.5">
+              Dashboard Mockup
+            </div>
+            <h3 className="text-[15px] font-medium text-white">
+              Profit Clarity + Smart Reordering
+            </h3>
           </div>
-          <div className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/80">
-            <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+          <div className="flex items-center gap-2 rounded-full bg-white/10 border border-white/[0.12] px-3 py-1.5 text-xs text-white/70">
+            <span className="h-[7px] w-[7px] rounded-full bg-emerald-400 animate-pulse" />
             Live Data
           </div>
         </div>
 
-        <div className="p-6 space-y-6 bg-convrt-light-gray/60">
-          
+        {/* Body */}
+        <div className="p-4 space-y-4 bg-white">
+
           {/* KPI Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
             {kpis.map((kpi) => (
-              <div key={kpi.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`inline-flex h-10 w-10 items-center justify-center rounded-full ${kpi.bg} ${kpi.tone}`}>
+              <div
+                key={kpi.label}
+                className="rounded-xl border border-slate-100 bg-slate-50 p-3"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <div
+                    className={`inline-flex h-8 w-8 items-center justify-center rounded-lg ${kpi.iconBg} ${kpi.tone}`}
+                  >
                     {kpi.icon}
                   </div>
-                  <span className={`text-xs font-semibold uppercase tracking-wide ${kpi.tone}`}>Alert</span>
+                  <span
+                    className={`text-[10px] font-medium uppercase tracking-wide px-1.5 py-0.5 rounded ${kpi.tagBg}`}
+                  >
+                    Alert
+                  </span>
                 </div>
-                <div className="text-lg font-semibold text-slate-900 leading-tight">{kpi.label}</div>
+                <div className="text-[13px] font-medium text-slate-800 leading-snug">
+                  {kpi.label}
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Charts */}
-          <div className="grid gap-6 md:grid-cols-2">
-            
-            {/* Profit Bar Chart */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mb-4">
-                <h4 className="text-xl font-semibold text-slate-900">Product Profit vs Revenue</h4>
-                <p className="mt-1 text-sm text-slate-600">See which products actually make you money</p>
+          {/* Charts Row */}
+          <div className="grid gap-4 md:grid-cols-2">
+
+            {/* Bar Chart */}
+            <div className="rounded-xl border border-slate-100 bg-white p-4">
+              <div className="mb-3">
+                <h4 className="text-[14px] font-medium text-slate-900">
+                  Product profit vs revenue
+                </h4>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  Which products actually make you money
+                </p>
               </div>
-              {/* <div className="h-96 rounded-2xl bg-slate-50 px-4 py-4 flex items-end gap-3 border border-slate-100"> */}
-              <div className="h-96 px-4 py-4 flex items-end gap-3 bg-transparent border-0">
+              <div className="flex items-end gap-2 h-36 mb-3">
                 {profitBars.map((bar) => (
-                  <div key={bar.name} className="flex-1 flex flex-col items-center justify-end gap-2">
-                    <div className="w-full flex items-end justify-center h-80">
+                  <div
+                    key={bar.name}
+                    className="flex-1 flex flex-col items-center justify-end gap-1.5 h-full"
+                  >
+                    <div className="w-full flex items-end justify-center" style={{ height: '100%' }}>
                       <div
-                        className={`w-full max-w-[42px] rounded-t-xl ${bar.profitable ? 'bg-emerald-500' : 'bg-red-500'}`}
+                        className={`w-full max-w-[36px] rounded-t-md ${
+                          bar.profitable ? 'bg-emerald-500' : 'bg-red-500'
+                        }`}
                         style={{ height: `${bar.value}%` }}
                       />
                     </div>
-                    <div className="text-xs font-medium text-slate-600">{bar.name}</div>
+                    <div className="text-[10px] text-slate-500">
+                      {bar.name.replace('SKU-', '')}
+                    </div>
                   </div>
                 ))}
               </div>
-              <div className="mt-4 flex items-center gap-4 text-sm text-slate-600">
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-emerald-500" />Profitable
+              <div className="flex items-center gap-4 text-xs text-slate-500">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
+                  Profitable
                 </span>
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-red-500" />Losing money
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
+                  Losing money
                 </span>
               </div>
             </div>
 
             {/* Reorder Intelligence */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mb-4">
-                <h4 className="text-xl font-semibold text-slate-900">Reorder Intelligence</h4>
-                <p className="mt-1 text-sm text-slate-600">AI-predicted reorder dates based on your sales history</p>
+            <div className="rounded-xl border border-slate-100 bg-white p-4">
+              <div className="mb-3">
+                <h4 className="text-[14px] font-medium text-slate-900">
+                  Reorder intelligence
+                </h4>
+                <p className="mt-0.5 text-xs text-slate-500">
+                  AI-predicted reorder dates from your sales history
+                </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 {reorderItems.map((item) => (
-                  <div key={item.sku} className="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <div className="flex items-center gap-2 text-slate-900 font-semibold">
-                          <Package className="h-4 w-4 text-slate-500" />
-                          {item.sku}
-                        </div>
-                        <div className="mt-1 inline-flex items-center gap-2 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">
-                          <TrendingUp className="h-3.5 w-3.5" />
-                          Reorder in {item.days} days
-                        </div>
+                  <div
+                    key={item.sku}
+                    className="flex items-center justify-between rounded-lg border border-slate-100 bg-slate-50 px-3 py-2.5"
+                  >
+                    <div className="flex flex-col gap-1">
+                      <div className="flex items-center gap-1.5 text-[13px] font-medium text-slate-800">
+                        <Package className="h-3.5 w-3.5 text-slate-400" />
+                        {item.sku}
                       </div>
-                      <div className="w-24 h-12 rounded-xl bg-white border border-slate-200 p-2 flex items-end">
-                        <svg viewBox="0 0 100 40" className="h-full w-full">
-                          <polyline
-                            fill="none"
-                            stroke="#0F172A"
-                            strokeOpacity="0.35"
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            points={item.points.map((point, index) => `${index * 16},${40 - point / 2}`).join(' ')}
-                          />
-                        </svg>
+                      <div
+                        className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium ${
+                          urgencyStyles[item.urgency]
+                        }`}
+                      >
+                        <Clock className="h-3 w-3" />
+                        Reorder in {item.days} days
                       </div>
+                    </div>
+                    <div className="w-16 h-8 rounded-lg bg-white border border-slate-200 p-1.5 flex items-end">
+                      <svg viewBox="0 0 96 40" className="h-full w-full">
+                        <polyline
+                          fill="none"
+                          stroke={item.stroke}
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          points={item.points
+                            .map((p, i) => `${i * 16},${40 - p / 2}`)
+                            .join(' ')}
+                        />
+                      </svg>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+
           </div>
-
         </div>
-      {/* </motion.div> */}
+      </motion.div>
 
-      {/* 3 Feature Cards — BELOW Dashboard */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <motion.div variants={itemVariants} className="flex justify-center">
+      {/* Feature Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <motion.div variants={itemVariants}>
           <StatCard
             value=""
             description="Stop Guessing When to Reorder"
             icon={<BarChart2 className="w-8 h-8" />}
-            footer="Know exactly when to restock every SKU based on your own sales history - never tie up cash in slow movers again."
+            footer="Know exactly when to restock every SKU based on your own sales history — never tie up cash in slow movers again."
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
+        <motion.div variants={itemVariants}>
           <StatCard
             value=""
             description="Not All Sales Are Good Sales"
@@ -206,7 +280,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
             footer="Some customers cost you more than they pay. See exactly who's making you money and who isn't."
           />
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center">
+        <motion.div variants={itemVariants}>
           <StatCard
             value=""
             description="Ask Your Business Anything. Get Answers Instantly."

@@ -8,7 +8,7 @@ const HowItWorks = () => {
       number: "1",
       icon: MessageSquare,
       title: "We Talk About Your Business",
-      description: "You tell me how your factory runs – products, orders, costs, and what you want to see clearly (profits, delays, wastage, etc.)."
+      description: "You tell me how your factory runs - products, orders, costs, and what you want to see clearly (profits, delays, wastage, etc.)."
     },
     {
       number: "2",
@@ -56,7 +56,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden bg-white" id="how-it-works">
+    <section className="relative py-20 overflow-hidden bg-gray-200" id="how-it-works">
       <div className="container-section relative z-10">
         <motion.div 
           initial="hidden"
@@ -142,7 +142,7 @@ const HowItWorks = () => {
           className="text-center mt-12"
         >
           <p className="text-xl font-semibold text-convrt-dark-blue">
-            No IT team. No setup. You run your factory — AI turns your data into daily insights.
+            No IT team. No setup. You run your factory - AI turns your data into daily insights.
           </p>
         </motion.div>
       </div>

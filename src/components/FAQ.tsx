@@ -39,7 +39,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="faq">
+    <section className="py-20 bg-gray-200" id="faq">
       <div className="container mx-auto max-w-4xl px-6">
         <motion.div
           initial="hidden"

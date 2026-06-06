@@ -127,7 +127,7 @@ const CaseStudy = () => {
   };
 
   return (
-    <section className="relative py-16 overflow-hidden bg-gray-50" id="case-study">
+    <section className="relative py-16 overflow-hidden bg-gray-200" id="case-study">
       <div className="container-section relative z-10">
         <motion.div
           initial="hidden"
