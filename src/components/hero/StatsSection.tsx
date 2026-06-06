@@ -177,23 +177,22 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
                   Which products actually make you money
                 </p>
               </div>
-              <div className="flex items-end gap-2 h-36 mb-3">
+              <div className="flex items-end gap-2 mb-1" style={{ height: '224px' }}>
                 {profitBars.map((bar) => (
-                  <div
-                    key={bar.name}
-                    className="flex-1 flex flex-col items-center justify-end gap-1.5 h-full"
-                  >
-                    <div className="w-full flex items-end justify-center" style={{ height: '100%' }}>
-                      <div
-                        className={`w-full max-w-[36px] rounded-t-md ${
-                          bar.profitable ? 'bg-emerald-500' : 'bg-red-500'
-                        }`}
-                        style={{ height: `${bar.value}%` }}
-                      />
-                    </div>
-                    <div className="text-[10px] text-slate-500">
-                      {bar.name.replace('SKU-', '')}
-                    </div>
+                  <div key={bar.name} className="flex-1 flex items-end justify-center h-full">
+                    <div
+                      className={`w-full max-w-[36px] rounded-t-md ${
+                        bar.profitable ? 'bg-emerald-500' : 'bg-red-500'
+                      }`}
+                      style={{ height: `${bar.value}%` }}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-2 mb-3">
+                {profitBars.map((bar) => (
+                  <div key={bar.name} className="flex-1 flex justify-center">
+                    <div className="text-[10px] text-slate-500">{bar.name}</div>
                   </div>
                 ))}
               </div>
