@@ -8,18 +8,18 @@ const HowItWorks = () => {
       number: "1",
       icon: MessageSquare,
       title: "We Talk About Your Business",
-      description: "You tell me how your factory runs - products, orders, costs, and what you want to see clearly (profits, delays, wastage, etc.)."
+      description: "You tell us how your factory runs - products, orders, costs, and what you want to see clearly (profits, delays, wastage, etc.)."
     },
     {
       number: "2",
       icon: Database,
-      title: "I Connect to Your Existing Data",
-      description: "You don't change anything. I securely pull data from tools you already use like QuickBooks, Excel, ERP, or any other software."
+      title: "We Connect to Your Existing Data very securely",
+      description: "You don't change anything. We securely pull data from tools you already use like QuickBooks, Excel, ERP, or any other software."
     },
     {
       number: "3",
       icon: Gauge,
-      title: "I Build Your AI-Powered Dashboard (in 7 Days)",
+      title: "We Build Your AI-Powered Dashboard (in 7 Days)",
       description: "We design a simple, AI-powered visual dashboard just for your manufacturing business that solves all the problems focused on production, costs, margins, and inventory."
     },
     {
