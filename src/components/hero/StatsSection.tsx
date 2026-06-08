@@ -123,7 +123,7 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
         <div className="bg-slate-800 px-6 py-4 flex items-center justify-between">
           <div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-white/45 mb-0.5">
-              Dashboard Mockup
+              Manufacturing Dashboard
             </div>
             <h3 className="text-[15px] font-medium text-white">
               Profit Clarity + Smart Reordering
