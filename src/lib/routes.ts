@@ -1,5 +1,5 @@
 const normalizeBasePath = (basePath: string) => {
-	if (basePath === "/") {
+	if (!basePath || basePath === "/" || basePath === "." || basePath === "./") {
 		return "/";
 	}
 
