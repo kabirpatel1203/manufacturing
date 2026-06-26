@@ -55,7 +55,11 @@ const Hero = () => {
             variants={itemVariants}
             className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
           >
-            <span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold text-3xl md:text-4xl lg:text-5xl">While You Read This, Your Competitor's </span><span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold">AI</span><span className="bg-convrt-text-gradient bg-clip-text text-transparent font-extrabold text-3xl md:text-4xl lg:text-5xl"> Is Cutting Their Costs.</span>
+            <h1 className="text-3xl font-extrabold md:text-4xl lg:text-5xl">
+  <span className="bg-convrt-text-gradient bg-clip-text text-transparent">
+    Stop Reordering the Wrong Stock and Chasing the Wrong Customers.
+  </span>
+</h1>
           </motion.h1>
           
 <motion.p 

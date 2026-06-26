@@ -122,7 +122,7 @@ const SimplePricing = () => {
               7-Day Free Trial - AI-Powered Dashboard on Your Data
             </h2>
             <p className="text-convrt-dark-blue/80 text-xl">
-              Then $99 setup + $29/month. Cancel anytime during trial, no hard feelings.
+              Then $299 setup + $99/month. Cancel anytime during trial, no hard feelings.
             </p>
           </motion.div>
 

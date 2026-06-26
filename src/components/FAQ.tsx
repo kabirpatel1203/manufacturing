@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const FAQ = () => {
   const faqs = [
     {
-      question: "Is there a contract?",
-      answer: "No. Cancel anytime. We're confident you'll see the value."
+      question: "Can I cancel anytime without any fees?",
+      answer: "Yes. Cancel anytime without any fees. We're confident you'll see the value."
     },
     {
       question: "What if my data is messy?",

@@ -35,7 +35,7 @@ const testimonials = [
 const stats = [
   {
     id: 1,
-    value: "40%",
+    value: "28%",
     description: "reduction in excess inventory",
     company: "Sorand Plastics",
     bgColor: "bg-[#efeaf5]",
